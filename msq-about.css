@@ -1,0 +1,692 @@
+/* ═══════════════════════════════════════════════════════════════
+   M SQUARE WATERTECH SERVICE LLP — ABOUT PAGE (about.html)
+   Cinematic Black Water & 3D Monolith Hero (Matching Reference)
+   Luxury Glassmorphism Trust Section & High-Conversion UI
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── 1. CINEMATIC BLACK WATER & 3D MONOLITH HERO ── */
+header.hero-parent.msq-about-hero,
+.msq-about-hero,
+#msq-about-hero {
+  position: relative !important;
+  min-height: 100vh !important;
+  height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding-top: clamp(6rem, 10vh, 7.2rem) !important;
+  padding-bottom: clamp(2rem, 4vh, 3.2rem) !important;
+  padding-left: clamp(1.5rem, 4vw, 3.5rem) !important;
+  padding-right: clamp(1.5rem, 4vw, 3.5rem) !important;
+  background: #000000 !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+  z-index: 1 !important;
+}
+
+/* Background Photorealistic Monolith Water Visual */
+.msq-about-hero-backdrop {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none !important;
+  z-index: 1 !important;
+  overflow: hidden !important;
+}
+
+.msq-about-monolith-img {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center 48% !important;
+  opacity: 1 !important;
+  z-index: 1 !important;
+  filter: contrast(106%) brightness(102%) !important;
+}
+
+.msq-about-water-canvas {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none !important;
+  z-index: 2 !important;
+  display: block !important;
+}
+
+/* Atmospheric Vignette and Seamless Black Fades */
+.msq-about-vignette-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  background:
+    radial-gradient(ellipse 45% 55% at 16% 50%, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 55%, transparent 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, transparent 18%, transparent 78%, #000000 100%) !important;
+  pointer-events: none !important;
+}
+
+/* Hero Container (Open Cinematic Left Layout) */
+.msq-about-hero-container {
+  position: relative !important;
+  z-index: 10 !important;
+  max-width: 1360px !important;
+  width: 100% !important;
+  margin: auto auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
+
+/* ── Hero Left Column (Editorial Typography) ── */
+.msq-about-hero-left {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  text-align: left !important;
+  max-width: 520px !important;
+  width: 100% !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+.msq-about-eyebrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  background: rgba(6, 29, 59, 0.65) !important;
+  border: 1px solid rgba(0, 191, 255, 0.4) !important;
+  color: #43dfff !important;
+  border-radius: 999px !important;
+  padding: 5px 16px !important;
+  font-size: 0.74rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  margin-bottom: 0.75rem !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.15) !important;
+}
+
+.msq-about-eyebrow-dot {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50% !important;
+  background: #00e5ff !important;
+  box-shadow: 0 0 10px #00e5ff !important;
+  display: inline-block !important;
+}
+
+.msq-about-hero-title {
+  font-size: clamp(2.2rem, 3.2vw, 3.2rem) !important;
+  font-weight: 900 !important;
+  line-height: 1.14 !important;
+  letter-spacing: -0.025em !important;
+  margin: 0 0 0.85rem 0 !important;
+  color: #ffffff !important;
+  text-align: left !important;
+  filter: drop-shadow(0 4px 24px rgba(0, 0, 0, 0.9)) !important;
+}
+
+.msq-about-hero-title .title-pure {
+  color: #ffffff !important;
+  display: block !important;
+  margin-bottom: 0.2rem !important;
+}
+
+.msq-about-hero-title .title-cyan {
+  background: linear-gradient(135deg, #00bfff 0%, #43dfff 50%, #b9f3ff 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  display: block !important;
+}
+
+.msq-brand-nowrap {
+  white-space: nowrap !important;
+}
+
+.msq-about-sub,
+.msq-about-hero-desc {
+  font-size: clamp(0.92rem, 1.05vw, 1.02rem) !important;
+  color: rgba(255, 255, 255, 0.88) !important;
+  line-height: 1.5 !important;
+  max-width: 480px !important;
+  margin: 0 0 1.15rem 0 !important;
+  text-align: left !important;
+  font-weight: 450 !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9) !important;
+}
+
+/* Hero CTA Action Group */
+.msq-about-actions {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.7rem !important;
+  align-items: flex-start !important;
+  width: 100% !important;
+}
+
+.msq-about-hubs-row {
+  display: flex !important;
+  gap: 0.75rem !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+}
+
+/* Primary Liquid Blue Metal Button */
+.msq-about-btn-primary {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 9px !important;
+  background: linear-gradient(115deg, #0757c8 0%, #0876d8 26%, #00bfff 50%, #0876d8 74%, #0757c8 100%) !important;
+  background-size: 220% 220% !important;
+  animation: msqLiquidSurfaceFlow 6s ease-in-out infinite !important;
+  color: #ffffff !important;
+  padding: 0.72rem 1.6rem !important;
+  border-radius: 999px !important;
+  font-weight: 800 !important;
+  font-size: 0.9rem !important;
+  letter-spacing: 0.02em !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  border: 1px solid rgba(0, 191, 255, 0.65) !important;
+  box-shadow: 0 4px 20px rgba(8, 118, 216, 0.5), 0 0 16px rgba(0, 191, 255, 0.35), inset 0 1px 1.5px rgba(255, 255, 255, 0.8), inset 0 -1px 2px rgba(6, 29, 59, 0.6) !important;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  z-index: 1 !important;
+}
+
+.msq-about-btn-primary::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(105deg, transparent 20%, rgba(67, 223, 255, 0.3) 38%, rgba(255, 255, 255, 0.85) 50%, rgba(185, 243, 255, 0.45) 62%, transparent 80%) !important;
+  transform: translateX(-140%) skewX(-20deg) !important;
+  animation: msqLiquidSheenSweep 5s cubic-bezier(0.4, 0, 0.2, 1) infinite !important;
+  pointer-events: none !important;
+  border-radius: inherit !important;
+  z-index: 2 !important;
+}
+
+.msq-about-btn-primary:hover {
+  transform: translateY(-2px) scale(1.025) !important;
+  box-shadow: 0 8px 32px rgba(8, 118, 216, 0.75), 0 0 26px rgba(67, 223, 255, 0.65), inset 0 1px 2px #ffffff !important;
+  border-color: #00bfff !important;
+  color: #ffffff !important;
+}
+
+.msq-about-btn-secondary {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  background: linear-gradient(125deg, rgba(6, 29, 59, 0.92) 0%, rgba(8, 60, 120, 0.75) 50%, rgba(6, 29, 59, 0.95) 100%) !important;
+  background-size: 200% 200% !important;
+  animation: msqLiquidSurfaceFlow 8s ease-in-out infinite !important;
+  color: #b9f3ff !important;
+  border: 1px solid rgba(0, 191, 255, 0.45) !important;
+  padding: 0.62rem 1.15rem !important;
+  border-radius: 999px !important;
+  font-weight: 750 !important;
+  font-size: 0.82rem !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(185, 243, 255, 0.4) !important;
+  transition: all 0.25s ease !important;
+  position: relative !important;
+  overflow: hidden !important;
+  z-index: 1 !important;
+}
+
+.msq-about-btn-secondary:hover {
+  border-color: #00bfff !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) scale(1.02) !important;
+  box-shadow: 0 8px 24px rgba(0, 191, 255, 0.45), inset 0 1px 1.5px rgba(255, 255, 255, 0.6) !important;
+}
+
+/* ── Hero Right Column: Frosted Glass Action Card (Exact Match to Image 2) ── */
+.msq-about-hero-right {
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+.msq-about-hero-card {
+  width: 100% !important;
+  max-width: 420px !important;
+  background: rgba(6, 17, 34, 0.78) !important;
+  backdrop-filter: blur(24px) saturate(160%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(160%) !important;
+  border: 1px solid rgba(0, 191, 255, 0.32) !important;
+  border-radius: 24px !important;
+  padding: 2.2rem 2.2rem !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7), inset 0 1px 1.5px rgba(255, 255, 255, 0.15), 0 0 30px rgba(0, 191, 255, 0.12) !important;
+  box-sizing: border-box !important;
+}
+
+.msq-about-card-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-bottom: 1.25rem !important;
+}
+
+.msq-about-card-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+  color: #7dd3fc !important;
+  font-size: 0.74rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+}
+
+.msq-about-card-badge .msq-badge-dot {
+  width: 7px !important;
+  height: 7px !important;
+  border-radius: 50% !important;
+  background: #38bdf8 !important;
+  box-shadow: 0 0 8px #38bdf8 !important;
+}
+
+.msq-about-card-num {
+  font-size: 0.78rem !important;
+  color: rgba(255, 255, 255, 0.45) !important;
+  font-family: monospace !important;
+  letter-spacing: 0.08em !important;
+}
+
+.msq-about-card-title {
+  font-size: 1.65rem !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+  color: #ffffff !important;
+  margin: 0 0 1.5rem 0 !important;
+  letter-spacing: -0.02em !important;
+}
+
+.msq-about-quick-form {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1.15rem !important;
+}
+
+.msq-about-input-wrap {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22) !important;
+  padding-bottom: 8px !important;
+  transition: border-color 0.25s ease !important;
+}
+
+.msq-about-input-wrap:focus-within {
+  border-bottom-color: #00e5ff !important;
+}
+
+.msq-about-input-wrap label {
+  font-size: 0.68rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+  margin: 0 !important;
+}
+
+.msq-about-input-wrap input {
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  color: #ffffff !important;
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  padding: 4px 0 !important;
+}
+
+.msq-about-input-wrap input::placeholder {
+  color: rgba(255, 255, 255, 0.35) !important;
+  font-weight: 400 !important;
+}
+
+.msq-about-form-footer {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 1rem !important;
+  margin-top: 0.6rem !important;
+}
+
+.msq-about-form-note {
+  font-size: 0.74rem !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  line-height: 1.45 !important;
+  margin: 0 !important;
+  max-width: 250px !important;
+}
+
+.msq-about-card-arrow-btn {
+  width: 52px !important;
+  height: 52px !important;
+  min-width: 52px !important;
+  min-height: 52px !important;
+  max-width: 52px !important;
+  max-height: 52px !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  background: #ffffff !important;
+  color: #06152b !important;
+  border: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease !important;
+  box-shadow: 0 4px 18px rgba(0, 191, 255, 0.45) !important;
+  flex-shrink: 0 !important;
+}
+
+.msq-about-card-arrow-btn svg {
+  width: 22px !important;
+  height: 22px !important;
+  stroke: #06152b !important;
+  display: block !important;
+}
+
+.msq-about-card-arrow-btn:hover {
+  transform: scale(1.08) rotate(45deg) !important;
+  background: #00e5ff !important;
+  color: #000000 !important;
+  box-shadow: 0 6px 24px rgba(0, 229, 255, 0.7) !important;
+}
+
+/* ── Bottom Ticker Status Bar (Matching Image 2 Reference) ── */
+.msq-about-hero-bar {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 1rem clamp(1.5rem, 4vw, 4rem) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.8) 100%) !important;
+  z-index: 10 !important;
+  box-sizing: border-box !important;
+}
+
+.msq-about-bar-col {
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  text-transform: uppercase !important;
+}
+
+.msq-about-bar-col span {
+  color: #38bdf8 !important;
+  margin-right: 6px !important;
+}
+
+/* ── 2. SECTION 2: WHY HOMES & INDUSTRIES TRUST US (6 LUXURY GLASS CARDS) ── */
+.msq-trust-section {
+  background: linear-gradient(180deg, #000000 0%, #030a17 40%, #06152b 100%) !important;
+  padding: 6.5rem clamp(1.5rem, 4vw, 3.5rem) 7rem !important;
+  position: relative !important;
+  z-index: 2 !important;
+  overflow: hidden !important;
+}
+
+.msq-trust-section::before {
+  content: "" !important;
+  position: absolute !important;
+  top: -10% !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 800px !important;
+  height: 400px !important;
+  background: radial-gradient(ellipse, rgba(0, 191, 255, 0.15) 0%, rgba(6, 29, 59, 0) 70%) !important;
+  pointer-events: none !important;
+}
+
+.msq-trust-container {
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  position: relative !important;
+  z-index: 3 !important;
+}
+
+.msq-trust-header-wrap {
+  text-align: center !important;
+  max-width: 840px !important;
+  margin: 0 auto 4rem !important;
+}
+
+.msq-trust-header-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 0.45rem 1.3rem !important;
+  background: rgba(0, 191, 255, 0.12) !important;
+  border: 1px solid rgba(0, 191, 255, 0.35) !important;
+  color: #38bdf8 !important;
+  border-radius: 999px !important;
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  margin-bottom: 1.25rem !important;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.2) !important;
+}
+
+.msq-trust-header-title {
+  font-size: clamp(2.2rem, 3.8vw, 3.1rem) !important;
+  font-weight: 900 !important;
+  color: #ffffff !important;
+  margin-bottom: 1.15rem !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1.2 !important;
+}
+
+.msq-trust-header-desc {
+  color: #94a3b8 !important;
+  font-size: 1.08rem !important;
+  line-height: 1.7 !important;
+  margin: 0 !important;
+}
+
+/* 6-Card Grid */
+.msq-trust-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 2rem !important;
+}
+
+.msq-trust-card {
+  background: linear-gradient(145deg, rgba(12, 34, 68, 0.65) 0%, rgba(6, 21, 43, 0.82) 100%) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-radius: 22px !important;
+  padding: 2.2rem 2rem 2rem !important;
+  border: 1px solid rgba(56, 189, 248, 0.24) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), inset 0 1px 1.5px rgba(255, 255, 255, 0.1) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.msq-trust-card::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: linear-gradient(90deg, transparent 0%, #00bfff 50%, transparent 100%) !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease !important;
+}
+
+.msq-trust-card:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 18px 46px rgba(0, 191, 255, 0.22), inset 0 1px 2px rgba(255, 255, 255, 0.2) !important;
+  border-color: #00bfff !important;
+}
+
+.msq-trust-card:hover::before {
+  opacity: 1 !important;
+}
+
+.msq-trust-top {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-bottom: 1.4rem !important;
+}
+
+.msq-trust-icon {
+  width: 54px !important;
+  height: 54px !important;
+  border-radius: 16px !important;
+  background: linear-gradient(135deg, rgba(0, 191, 255, 0.22) 0%, rgba(6, 29, 59, 0.85) 100%) !important;
+  border: 1px solid rgba(0, 191, 255, 0.45) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #38bdf8 !important;
+  box-shadow: 0 0 18px rgba(0, 191, 255, 0.25) !important;
+}
+
+.msq-trust-icon svg {
+  width: 26px !important;
+  height: 26px !important;
+  stroke: #38bdf8 !important;
+}
+
+.msq-trust-badge {
+  background: rgba(56, 189, 248, 0.12) !important;
+  color: #7dd3fc !important;
+  border: 1px solid rgba(56, 189, 248, 0.35) !important;
+  font-size: 0.74rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.06em !important;
+  padding: 5px 14px !important;
+  border-radius: 999px !important;
+  text-transform: uppercase !important;
+}
+
+.msq-trust-card h3 {
+  font-size: 1.32rem !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  margin: 0 0 0.85rem 0 !important;
+  letter-spacing: -0.015em !important;
+  line-height: 1.25 !important;
+}
+
+.msq-trust-card p {
+  color: #cbd5e1 !important;
+  font-size: 0.94rem !important;
+  line-height: 1.65 !important;
+  margin: 0 0 1.25rem 0 !important;
+  flex-grow: 1 !important;
+}
+
+.msq-trust-feature-chip {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+  color: #38bdf8 !important;
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+  background: rgba(0, 191, 255, 0.08) !important;
+  padding: 6px 12px !important;
+  border-radius: 8px !important;
+  border: 1px solid rgba(0, 191, 255, 0.18) !important;
+  width: fit-content !important;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .msq-trust-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.75rem !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .msq-about-hero {
+    min-height: auto !important;
+    padding: 7.5rem 1.5rem 4.5rem !important;
+  }
+  .msq-about-hero-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .msq-about-hero-left {
+    align-items: center !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+  .msq-about-hero-title {
+    text-align: center !important;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.95), 0 0 35px #000000 !important;
+  }
+  .msq-about-sub,
+  .msq-about-hero-desc {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.95), 0 0 24px #000000 !important;
+    background: rgba(0, 0, 0, 0.62) !important;
+    padding: 0.75rem 1.25rem !important;
+    border-radius: 14px !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  }
+  .msq-about-actions {
+    align-items: center !important;
+  }
+  .msq-about-hubs-row {
+    justify-content: center !important;
+  }
+  .msq-about-hero-bar {
+    position: relative !important;
+    flex-direction: column !important;
+    gap: 0.6rem !important;
+    text-align: center !important;
+    margin-top: 2rem !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .msq-trust-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+  .msq-about-hero-card {
+    padding: 1.6rem 1.4rem !important;
+  }
+  .msq-about-card-title {
+    font-size: 1.4rem !important;
+  }
+}

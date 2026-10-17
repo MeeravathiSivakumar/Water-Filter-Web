@@ -1,0 +1,449 @@
+/* ═══════════════════════════════════════════════════════════════
+   M SQUARE WATERTECH SERVICE LLP — FAQ PAGE OVERHAUL (faq.html)
+   Ultra-attractive, balanced 2-column layout, high contrast & flawless UI
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── 1. MAIN SECTION & ATMOSPHERE ── */
+header.hero-parent.no-hide-auto.msq-faq-hero,
+header.hero-parent.no-hide-auto {
+  background: linear-gradient(165deg, #061528 0%, #030f1e 45%, #02070f 100%) !important;
+  min-height: 100vh !important;
+  padding: clamp(4.8rem, 6.8vh, 5.5rem) clamp(1.25rem, 4vw, 3.5rem) clamp(2.5rem, 5vh, 4rem) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  color: #ffffff !important;
+  box-sizing: border-box !important;
+}
+
+/* Subtle ambient radial aquatic illumination */
+header.hero-parent.no-hide-auto::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 10% !important;
+  left: 15% !important;
+  width: 600px !important;
+  height: 600px !important;
+  border-radius: 50% !important;
+  background: radial-gradient(circle, rgba(0, 147, 254, 0.14) 0%, rgba(0, 87, 168, 0.05) 50%, transparent 70%) !important;
+  pointer-events: none !important;
+  z-index: 1 !important;
+}
+
+header.hero-parent.no-hide-auto::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 5% !important;
+  right: 10% !important;
+  width: 500px !important;
+  height: 500px !important;
+  border-radius: 50% !important;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.1) 0%, rgba(0, 119, 182, 0.03) 60%, transparent 70%) !important;
+  pointer-events: none !important;
+  z-index: 1 !important;
+}
+
+/* ── 2. CONTAINER & BALANCED 2-COLUMN GRID ── */
+.msq-faq-container,
+.hero-parent .page-wrap.auto {
+  max-width: 1320px !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+  position: relative !important;
+  z-index: 5 !important;
+}
+
+.msq-faq-grid,
+.hero-parent .w-layout-grid.grid-other.auto {
+  display: grid !important;
+  grid-template-columns: 420px 1fr !important;
+  gap: clamp(1.75rem, 3.5vw, 3.0rem) !important;
+  align-items: start !important;
+}
+
+/* ── 3. LEFT COLUMN: M SQUARE WATERCARE SUPPORT CARD ── */
+.msq-faq-support-col,
+#w-node-_4424a24b-c63a-0f80-809e-d44e0f011db6-90d2b81d {
+  position: sticky !important;
+  top: 80px !important;
+  align-self: start !important;
+  background: rgba(7, 22, 44, 0.85) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(56, 189, 248, 0.28) !important;
+  border-radius: 20px !important;
+  padding: clamp(1.35rem, 2.2vw, 1.85rem) !important;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  height: auto !important;
+  min-height: auto !important;
+}
+
+/* Remove old black stretched bubble videos */
+.msq-faq-support-col video,
+#w-node-_4424a24b-c63a-0f80-809e-d44e0f011db6-90d2b81d > div:first-child video,
+.hero-parent .video-bg {
+  display: none !important;
+}
+
+/* Eyebrow badge */
+.msq-faq-eyebrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  background: rgba(56, 189, 248, 0.14) !important;
+  border: 1px solid rgba(56, 189, 248, 0.4) !important;
+  color: #38bdf8 !important;
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  padding: 0.32rem 0.85rem !important;
+  border-radius: 999px !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.msq-faq-eyebrow-dot {
+  width: 7px !important;
+  height: 7px !important;
+  border-radius: 50% !important;
+  background: #38bdf8 !important;
+  box-shadow: 0 0 8px #38bdf8 !important;
+  display: inline-block !important;
+}
+
+/* Title & Subtitle */
+.msq-faq-title {
+  font-size: clamp(1.95rem, 3.0vw, 2.45rem) !important;
+  font-weight: 900 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.025em !important;
+  color: #ffffff !important;
+  margin: 0 0 0.65rem 0 !important;
+}
+
+.msq-faq-title .title-accent {
+  background: linear-gradient(135deg, #38bdf8 0%, #0093fe 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  display: inline-block !important;
+}
+
+.msq-faq-desc {
+  font-size: 0.88rem !important;
+  color: rgba(255, 255, 255, 0.82) !important;
+  line-height: 1.55 !important;
+  margin: 0 0 1.15rem 0 !important;
+}
+
+/* Hub Mini Cards Container */
+.msq-faq-hubs {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.9rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.msq-faq-hub-card {
+  background: rgba(3, 15, 32, 0.75) !important;
+  border: 1px solid rgba(56, 189, 248, 0.22) !important;
+  border-radius: 14px !important;
+  padding: 1rem 1.15rem !important;
+  transition: all 0.2s ease !important;
+}
+
+.msq-faq-hub-card:hover {
+  border-color: rgba(56, 189, 248, 0.5) !important;
+  background: rgba(3, 18, 40, 0.9) !important;
+  transform: translateY(-1px) !important;
+}
+
+.msq-faq-hub-top {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-bottom: 0.35rem !important;
+}
+
+.msq-faq-hub-name {
+  font-size: 0.98rem !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+}
+
+.msq-faq-hub-pin {
+  font-size: 0.72rem !important;
+  color: #7dd3fc !important;
+  background: rgba(56, 189, 248, 0.12) !important;
+  padding: 2px 8px !important;
+  border-radius: 999px !important;
+  font-weight: 700 !important;
+}
+
+.msq-faq-hub-coverage {
+  font-size: 0.8rem !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  line-height: 1.4 !important;
+  margin-bottom: 0.65rem !important;
+}
+
+.msq-faq-hub-actions {
+  display: flex !important;
+  gap: 0.5rem !important;
+}
+
+.msq-faq-hub-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 0.4rem 0.85rem !important;
+  border-radius: 999px !important;
+  font-size: 0.78rem !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+}
+
+.msq-faq-btn-call {
+  background: #0077b6 !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 10px rgba(0, 119, 182, 0.35) !important;
+}
+
+.msq-faq-btn-call:hover {
+  background: #0093fe !important;
+  color: #ffffff !important;
+}
+
+.msq-faq-btn-wa {
+  background: rgba(37, 211, 102, 0.18) !important;
+  border: 1px solid rgba(37, 211, 102, 0.4) !important;
+  color: #4ade80 !important;
+}
+
+.msq-faq-btn-wa:hover {
+  background: rgba(37, 211, 102, 0.3) !important;
+  color: #86efac !important;
+}
+
+/* Service Highlights Pills */
+.msq-faq-guarantees-bar {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.45rem !important;
+  margin-bottom: 1.15rem !important;
+}
+
+.msq-faq-guarantee-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  padding: 0.3rem 0.7rem !important;
+  border-radius: 999px !important;
+}
+
+/* CTA Button */
+.msq-faq-cta-btn {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  background: linear-gradient(135deg, #0077b6 0%, #0093fe 100%) !important;
+  color: #ffffff !important;
+  font-size: 0.95rem !important;
+  font-weight: 800 !important;
+  text-decoration: none !important;
+  padding: 0.85rem 1.5rem !important;
+  border-radius: 999px !important;
+  box-shadow: 0 4px 18px rgba(0, 147, 254, 0.45) !important;
+  transition: all 0.2s ease !important;
+}
+
+.msq-faq-cta-btn:hover {
+  background: linear-gradient(135deg, #0093fe 0%, #38bdf8 100%) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 24px rgba(0, 147, 254, 0.6) !important;
+}
+
+/* ── 4. RIGHT COLUMN: ACCORDION ITEMS ── */
+.msq-faq-accordion,
+#w-node-acf3f1d1-a9f2-aef7-914c-b35cb3ce4db4-90d2b81d {
+  padding-left: 0 !important;
+  margin: 0 !important;
+}
+
+.msq-faq-item,
+.hero-parent .tab-wrap {
+  background: rgba(8, 25, 48, 0.75) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(56, 189, 248, 0.22) !important;
+  border-radius: 14px !important;
+  margin-bottom: 0.65rem !important;
+  overflow: hidden !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+.msq-faq-item:hover,
+.hero-parent .tab-wrap:hover {
+  border-color: rgba(56, 189, 248, 0.5) !important;
+  background: rgba(10, 32, 62, 0.85) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(0, 119, 182, 0.25) !important;
+}
+
+.msq-faq-item.is-open,
+.hero-parent .tab-wrap.is-open {
+  background: rgba(12, 36, 70, 0.92) !important;
+  border-color: rgba(56, 189, 248, 0.6) !important;
+  box-shadow: 0 12px 35px rgba(0, 119, 182, 0.35) !important;
+}
+
+/* Question Header */
+.msq-faq-question,
+.hero-parent .tab-parent {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 1.0rem !important;
+  padding: 0.95rem 1.35rem !important;
+  cursor: pointer !important;
+  user-select: none !important;
+  background: transparent !important;
+  border: none !important;
+  color: #ffffff !important;
+}
+
+.msq-faq-q-text,
+.hero-parent .tab-parent > div:first-child {
+  font-size: 0.96rem !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  line-height: 1.45 !important;
+  letter-spacing: -0.01em !important;
+  margin: 0 !important;
+  flex: 1 !important;
+}
+
+/* Rotating Toggle Icon Pill */
+.msq-faq-toggle-icon,
+.hero-parent .tab-parent .arrow-icon {
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px !important;
+  border-radius: 50% !important;
+  background: linear-gradient(135deg, #0757c8 0%, #0093fe 100%) !important;
+  border: 1px solid rgba(56, 189, 248, 0.5) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background 0.2s ease, border-color 0.2s ease !important;
+  filter: none !important;
+  box-shadow: 0 2px 10px rgba(0, 147, 254, 0.35) !important;
+}
+
+.hero-parent .tab-wrap.is-open .msq-faq-toggle-icon,
+.hero-parent .tab-wrap.is-open .arrow-icon {
+  transform: rotate(180deg) !important;
+  background: #00bfff !important;
+  border-color: #ffffff !important;
+}
+
+/* Answer Content Container */
+.msq-faq-answer,
+.hero-parent .tab-content,
+.hero-parent .tab-content .flex-c-l,
+.hero-parent .tab-content div {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.msq-faq-answer,
+.hero-parent .tab-content {
+  padding: 0 1.65rem 1.65rem !important;
+  overflow: hidden !important;
+  transition: all 0.3s ease !important;
+}
+
+.msq-faq-answer-inner,
+.hero-parent .tab-content .flex-c-l {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.hero-parent .tab-content .fade,
+.hero-parent .tab-content p,
+.hero-parent .tab-content div,
+.hero-parent .tab-content span {
+  color: rgba(255, 255, 255, 0.92) !important;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.92) !important;
+  font-size: 1rem !important;
+  line-height: 1.75 !important;
+  margin: 0 !important;
+}
+
+.hero-parent .tab-content .flex-c-l > div {
+  border-top: 1px solid rgba(56, 189, 248, 0.18) !important;
+  padding-top: 1.15rem !important;
+}
+
+/* ── 5. RESPONSIVE BREAKPOINTS ── */
+@media screen and (max-width: 1024px) {
+  .msq-faq-grid,
+  .hero-parent .w-layout-grid.grid-other.auto {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+
+  .msq-faq-support-col,
+  #w-node-_4424a24b-c63a-0f80-809e-d44e0f011db6-90d2b81d {
+    position: static !important;
+    top: auto !important;
+  }
+
+  .msq-faq-hubs {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header.hero-parent.no-hide-auto {
+    padding: 7rem 1rem 3.5rem !important;
+  }
+
+  .msq-faq-support-col,
+  #w-node-_4424a24b-c63a-0f80-809e-d44e0f011db6-90d2b81d {
+    padding: 1.5rem 1.25rem !important;
+    border-radius: 20px !important;
+  }
+
+  .msq-faq-hubs {
+    grid-template-columns: 1fr !important;
+  }
+
+  .msq-faq-q-text,
+  .hero-parent .tab-parent > div:first-child {
+    font-size: 1rem !important;
+  }
+
+  .msq-faq-question,
+  .hero-parent .tab-parent {
+    padding: 1.15rem 1.25rem !important;
+  }
+
+  .msq-faq-answer,
+  .hero-parent .tab-content {
+    padding: 0 1.25rem 1.25rem !important;
+  }
+}

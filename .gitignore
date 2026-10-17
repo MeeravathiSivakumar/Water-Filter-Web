@@ -1,0 +1,30 @@
+# System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Temporary test & audit screenshots
+verify_*.png
+audit_*.png
+slice_*.png
+test_*.png
+test_*.html
+test_*.js
+crop_*.png
+actual_*.png
+canvas_*.png
+current_*.png
+check_*.png
+full_page_hero.png
+audit_*.js
+verify_*.js
+take_audit_wordmark.js
+target_*.txt
+*.log
+
+# Dependencies & Build Cache
+node_modules/
+.vercel/
+.cache/

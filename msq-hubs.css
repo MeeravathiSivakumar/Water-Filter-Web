@@ -1,0 +1,264 @@
+/* ═══════════════════════════════════════════════════════════════
+   M SQUARE WATERTECH SERVICE LLP — SERVICE HUBS (sustainability.html)
+   Exact Alignment & Deep Black Hero Header
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── 1. HEADER (DEEP BLACK THEME LIKE about.html) ── */
+.msq-hubs-hero {
+  position: relative !important;
+  background: #000000 !important;
+  min-height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: clamp(7.5rem, 12vh, 9.5rem) 1.5rem clamp(4rem, 6vh, 5.5rem) !important;
+  text-align: center !important;
+  color: #ffffff !important;
+  overflow: hidden !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-sizing: border-box !important;
+}
+
+.msq-hubs-hero-video {
+  position: absolute;
+  inset: 0;
+  opacity: 0.42;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.msq-hubs-hero-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 35%, rgba(0, 180, 216, 0.18) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.msq-hubs-hero-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+
+.msq-hubs-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  padding: 7px 22px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #7dd3fc;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(8px);
+}
+
+.msq-hubs-eyebrow-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 10px #10b981;
+}
+
+.msq-hubs-hero-title {
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin: 0 0 1.25rem;
+  color: #ffffff;
+}
+
+.msq-hubs-hero-title .title-cyan {
+  background: linear-gradient(135deg, #38bdf8 0%, #60a5fa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.msq-hubs-hero-desc {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+}
+
+.msq-hubs-hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ── 2. TWO STRATEGIC HUBS GRID (EXACT 2-COLUMN ALIGNMENT) ── */
+.msq-hubs-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 2.5rem !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  align-items: stretch !important;
+}
+
+.msq-hub-card {
+  background: #ffffff !important;
+  border-radius: 24px !important;
+  overflow: hidden !important;
+  box-shadow: 0 12px 35px rgba(0, 87, 168, 0.08) !important;
+  border: 1px solid rgba(0, 87, 168, 0.12) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.msq-hub-card:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 20px 45px rgba(0, 87, 168, 0.14) !important;
+}
+
+/* ── 3. COVERAGE ZONES GRID (EXACT 3-COLUMN ALIGNMENT) ── */
+.msq-zones-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 1.75rem !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  align-items: stretch !important;
+}
+
+.msq-zone-card {
+  background: #f8fafc !important;
+  border-radius: 20px !important;
+  border: 1.5px solid #e2e8f0 !important;
+  padding: 2rem 1.75rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  transition: transform 0.25s ease, border-color 0.25s ease !important;
+}
+
+.msq-zone-card:hover {
+  transform: translateY(-4px) !important;
+  border-color: #0093fe !important;
+  box-shadow: 0 10px 30px rgba(0, 87, 168, 0.08) !important;
+}
+
+/* ── 4. KEY STATS STANDALONE SECTION & CARDS ── */
+.msq-stats-section {
+  position: relative !important;
+  background: radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.14) 0%, transparent 60%),
+              linear-gradient(145deg, #050d1a 0%, #0a1b38 50%, #051022 100%) !important;
+  border-top: 1px solid rgba(56, 189, 248, 0.22) !important;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.22) !important;
+  padding: 4.5rem 1.5rem !important;
+  color: #ffffff !important;
+  overflow: hidden !important;
+}
+
+.msq-stats-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 1.5rem !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.msq-stat-card {
+  background: rgba(15, 28, 50, 0.65) !important;
+  border: 1px solid rgba(56, 189, 248, 0.25) !important;
+  border-radius: 20px !important;
+  padding: 2.2rem 1.5rem !important;
+  text-align: center !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.3) !important;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.msq-stat-card:hover {
+  transform: translateY(-5px) !important;
+  border-color: rgba(56, 189, 248, 0.6) !important;
+  box-shadow: 0 18px 45px rgba(0, 180, 216, 0.22) !important;
+}
+
+.msq-stat-num {
+  font-size: clamp(2.4rem, 4vw, 3.2rem) !important;
+  font-weight: 900 !important;
+  line-height: 1.1 !important;
+  background: linear-gradient(135deg, #38bdf8 0%, #93c5fd 60%, #ffffff 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  margin-bottom: 0.6rem !important;
+  font-variant-numeric: tabular-nums !important;
+  font-feature-settings: "tnum" !important;
+  display: inline-block !important;
+}
+
+.msq-stat-label {
+  font-size: 0.96rem !important;
+  font-weight: 600 !important;
+  color: rgba(226, 242, 255, 0.9) !important;
+  letter-spacing: 0.02em !important;
+  line-height: 1.4 !important;
+}
+
+/* ── 5. PREFOOTER GRIDS ── */
+.msq-prefooter-guarantees {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 1.25rem !important;
+  margin-bottom: 3rem !important;
+}
+
+.msq-prefooter-hubs {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 1.5rem !important;
+  max-width: 960px !important;
+  margin: 0 auto !important;
+}
+
+/* ── RESPONSIVE BREAKPOINTS ── */
+@media screen and (max-width: 992px) {
+  .msq-hubs-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  .msq-zones-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+  .msq-stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+  .msq-prefooter-guarantees {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .msq-prefooter-hubs {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .msq-hubs-hero {
+    padding: 7rem 1.25rem 4rem !important;
+  }
+  .msq-stats-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .msq-prefooter-guarantees {
+    grid-template-columns: 1fr !important;
+  }
+}
