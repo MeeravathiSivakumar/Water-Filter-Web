@@ -558,6 +558,13 @@ header.hero-parent.dark.msq-hiw-hero .hero-title-parent.top,
   align-items: center !important;
 }
 
+.msq-doorstep-text {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+}
+
 .msq-doorstep-text .tag {
   display: inline-block !important;
   background: rgba(0, 87, 168, 0.1) !important;
@@ -569,7 +576,7 @@ header.hero-parent.dark.msq-hiw-hero .hero-title-parent.top,
   text-transform: uppercase !important;
   padding: 6px 16px !important;
   border-radius: 999px !important;
-  margin-bottom: 1rem !important;
+  margin-bottom: 0.85rem !important;
 }
 
 .msq-doorstep-text h2 {
@@ -578,14 +585,20 @@ header.hero-parent.dark.msq-hiw-hero .hero-title-parent.top,
   line-height: 1.15 !important;
   letter-spacing: -0.02em !important;
   color: #0a1628 !important;
-  margin: 0 0 1.25rem 0 !important;
+  margin: 0 0 1rem 0 !important;
 }
 
 .msq-doorstep-text p {
   font-size: 1.05rem !important;
   color: #334155 !important;
   line-height: 1.7 !important;
-  margin: 0 0 2rem 0 !important;
+  margin: 0 0 1.25rem 0 !important;
+}
+
+.msq-doorstep-text .msq-hiw-btn-primary {
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.5rem !important;
+  align-self: flex-start !important;
 }
 
 .msq-doorstep-img-wrap {

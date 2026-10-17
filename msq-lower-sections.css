@@ -437,10 +437,10 @@
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: repeat(3, 1fr) !important;
-  gap: 24px !important;
-  max-width: 1280px !important;
-  margin: 0 auto 3.5rem !important;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1280px;
+  margin: 0 auto 3.5rem;
   align-items: stretch;
 }
 
@@ -633,27 +633,34 @@
 }
 
 .card-action-btn {
-  width: 100%;
-  padding: 0.65rem 1rem;
-  background: #f8fafc;
-  border: 1.5px solid rgba(2, 132, 199, 0.25);
-  border-radius: 12px;
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: #0284c7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  cursor: pointer;
-  transition: all 0.25s ease;
+  width: 100% !important;
+  padding: 0.72rem 1.2rem !important;
+  border-radius: 999px !important;
+  font-size: 0.88rem !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  cursor: pointer !important;
+  isolation: isolate !important;
+  position: relative !important;
+  transition: all 0.25s ease !important;
+}
+
+.card-action-btn > *,
+.card-action-btn span {
+  position: relative !important;
+  z-index: 5 !important;
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7) !important;
 }
 
 .water-care-card:hover .card-action-btn {
-  background: #0284c7;
-  color: #ffffff;
-  border-color: #0284c7;
-  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
+  border-color: #00d4ff !important;
+  box-shadow: 0 4px 18px rgba(2, 132, 199, 0.5) !important;
 }
 
 .card-explore-hint {
@@ -1768,8 +1775,11 @@
 
 @media screen and (max-width: 768px) {
   .water-care-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    max-width: 460px !important;
+    margin: 0 auto 3rem !important;
+    padding: 0 1rem !important;
   }
   .msq-trust-feature-grid {
     grid-template-columns: 1fr;
