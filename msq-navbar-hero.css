@@ -263,17 +263,7 @@ img, video, canvas, svg {
 }
 
 .msq-link::before {
-  content: "" !important;
-  position: absolute !important;
-  inset: 0 !important;
-  border-radius: inherit !important;
-  background: linear-gradient(115deg, #0052a3 0%, #008cd6 22%, #00b4d8 45%, #00e5c9 70%, #06d6a0 88%, #0093fe 100%) !important;
-  background-size: 260% 260% !important;
-  animation: msqLiquidSurfaceFlow 4.5s ease-in-out infinite !important;
-  opacity: 0 !important;
-  transition: opacity 0.28s ease !important;
-  z-index: 1 !important;
-  pointer-events: none !important;
+  display: none !important;
 }
 
 .msq-link::after {
@@ -300,14 +290,11 @@ img, video, canvas, svg {
 .msq-link:not(.is-active):focus-visible {
   color: #ffffff !important;
   border-color: rgba(0, 229, 201, 0.85) !important;
+  background: linear-gradient(115deg, #0057c8 0%, #0093fe 30%, #00d4ff 70%, #06d6a0 100%) !important;
+  background-size: 200% 200% !important;
+  animation: msqLiquidSurfaceFlow 4s ease-in-out infinite !important;
   box-shadow: 0 4px 20px rgba(0, 180, 216, 0.6), 0 0 16px rgba(6, 214, 160, 0.45), inset 0 1px 1.5px #ffffff !important;
   transform: translateY(-2px) scale(1.03) !important;
-}
-
-.msq-link:not(.is-active):hover::before,
-.msq-link:not(.is-active):active::before,
-.msq-link:not(.is-active):focus-visible::before {
-  opacity: 1 !important;
 }
 
 .msq-link:not(.is-active):hover::after,
@@ -577,8 +564,8 @@ img, video, canvas, svg {
   right: 0 !important;
   bottom: 0 !important;
   width: min(360px, 86vw) !important;
-  background: linear-gradient(160deg, #06152b 0%, #0a244a 100%) !important;
-  border-left: 1px solid rgba(0, 212, 255, 0.3) !important;
+  background: linear-gradient(160deg, #0b2c58 0%, #0d3d7a 50%, #082144 100%) !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.35) !important;
   box-shadow: -10px 0 35px rgba(2, 8, 20, 0.7) !important;
   padding: 1.8rem 1.5rem !important;
   display: flex !important;
@@ -642,27 +629,20 @@ img, video, canvas, svg {
   position: relative !important;
   overflow: hidden !important;
   isolation: isolate !important;
-  color: #e2e8f0 !important;
+  color: #ffffff !important;
   text-decoration: none !important;
   font-size: 1.05rem !important;
-  font-weight: 600 !important;
-  padding: 0.75rem 1rem !important;
-  border-radius: 12px !important;
-  border: 1px solid transparent !important;
+  font-weight: 700 !important;
+  padding: 0.75rem 1.15rem !important;
+  border-radius: 999px !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(14, 68, 140, 0.35) 100%) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.6) !important;
   transition: all 0.25s ease !important;
 }
 
 .msq-drawer-link::before {
-  content: "" !important;
-  position: absolute !important;
-  inset: 0 !important;
-  border-radius: inherit !important;
-  background: linear-gradient(115deg, #0052a3 0%, #008cd6 25%, #00b4d8 50%, #00e5c9 75%, #06d6a0 100%) !important;
-  background-size: 240% 240% !important;
-  animation: msqLiquidSurfaceFlow 6s ease-in-out infinite !important;
-  opacity: 0 !important;
-  transition: opacity 0.25s ease !important;
-  z-index: -2 !important;
+  display: none !important;
 }
 
 .msq-drawer-link::after {
@@ -673,26 +653,26 @@ img, video, canvas, svg {
   background: linear-gradient(105deg, transparent 20%, rgba(0, 229, 201, 0.3) 38%, rgba(255, 255, 255, 0.9) 50%, rgba(185, 243, 255, 0.45) 62%, transparent 80%) !important;
   transform: translateX(-150%) skewX(-20deg) !important;
   opacity: 0 !important;
-  z-index: -1 !important;
+  z-index: 2 !important;
 }
 
-.msq-drawer-link > * {
+.msq-drawer-link > *,
+.msq-drawer-link span {
   position: relative !important;
-  z-index: 3 !important;
+  z-index: 5 !important;
+  display: inline-block !important;
+  color: #ffffff !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
 }
 
 .msq-drawer-link:hover,
 .msq-drawer-link:active,
 .msq-drawer-link.is-active {
   color: #ffffff !important;
-  border-color: rgba(0, 229, 201, 0.6) !important;
-  box-shadow: 0 4px 16px rgba(0, 180, 216, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.5) !important;
-}
-
-.msq-drawer-link:hover::before,
-.msq-drawer-link:active::before,
-.msq-drawer-link.is-active::before {
-  opacity: 1 !important;
+  border-color: rgba(0, 229, 201, 0.85) !important;
+  background: linear-gradient(115deg, #0057c8 0%, #0093fe 35%, #00d4ff 70%, #06d6a0 100%) !important;
+  box-shadow: 0 4px 18px rgba(0, 180, 216, 0.55), inset 0 1px 1.5px rgba(255, 255, 255, 0.8) !important;
+  transform: translateX(4px) !important;
 }
 
 .msq-drawer-link:hover::after,
@@ -1010,8 +990,7 @@ button[type="submit"]:not(.msq-about-card-arrow-btn),
 .msq-matrix-cta,
 .msq-btn-find-more,
 .showcase-cta,
-.pure-liquid-btn,
-.assembly-btn.active {
+.pure-liquid-btn {
   position: relative !important;
   overflow: hidden !important;
   isolation: isolate !important;
@@ -1087,8 +1066,7 @@ button[type="submit"]:not(.msq-about-card-arrow-btn)::before,
 .msq-matrix-cta::before,
 .msq-btn-find-more::before,
 .showcase-cta::before,
-.pure-liquid-btn::before,
-.assembly-btn.active::before {
+.pure-liquid-btn::before {
   content: "" !important;
   position: absolute !important;
   inset: 2px !important;
@@ -1130,8 +1108,7 @@ button.btn-primary::after,
 .msq-matrix-cta::after,
 .msq-btn-find-more::after,
 .showcase-cta::after,
-.pure-liquid-btn::after,
-.assembly-btn.active::after {
+.pure-liquid-btn::after {
   content: "" !important;
   position: absolute !important;
   inset: 0 !important;
@@ -1177,7 +1154,6 @@ button.btn-primary::after,
 .msq-btn-find-more > *,
 .showcase-cta > *,
 .pure-liquid-btn > *,
-.assembly-btn.active > *,
 .msq-nav-cta > * {
   position: relative !important;
   z-index: 3 !important;
@@ -1215,8 +1191,7 @@ button[type="submit"]:hover,
 .msq-matrix-cta:hover,
 .msq-btn-find-more:hover,
 .showcase-cta:hover,
-.pure-liquid-btn:hover,
-.assembly-btn.active:hover {
+.pure-liquid-btn:hover {
   transform: translateY(-2px) scale(1.025) !important;
   animation-duration: 1.5s !important;
   border-color: #00bfff !important;
@@ -1274,9 +1249,6 @@ button.btn-secondary,
 .msq-btn-hero-hub,
 .msq-contact-hub-call,
 .msq-drawer-phone,
-.msq-cat-btn,
-.assembly-btn,
-.assembly-btn:not(.active),
 .pure-liquid-btn.obsidian,
 .card-action-btn {
   position: relative !important;
@@ -1339,9 +1311,6 @@ button.btn-secondary::before,
 .msq-btn-hero-hub::before,
 .msq-contact-hub-call::before,
 .msq-drawer-phone::before,
-.msq-cat-btn::before,
-.assembly-btn::before,
-.assembly-btn:not(.active)::before,
 .pure-liquid-btn.obsidian::before,
 .card-action-btn::before {
   content: "" !important;
@@ -1373,9 +1342,6 @@ button.btn-secondary::after,
 .msq-btn-hero-hub::after,
 .msq-contact-hub-call::after,
 .msq-drawer-phone::after,
-.msq-cat-btn::after,
-.assembly-btn::after,
-.assembly-btn:not(.active)::after,
 .pure-liquid-btn.obsidian::after,
 .card-action-btn::after {
   content: "" !important;
@@ -1411,9 +1377,6 @@ button.btn-secondary::after,
 .msq-contact-hub-call > *,
 .msq-drawer-phone > *,
 .msq-btn-hero-hub > *,
-.msq-cat-btn > *,
-.assembly-btn > *,
-.assembly-btn:not(.active) > *,
 .pure-liquid-btn.obsidian > *,
 .card-action-btn > * {
   position: relative !important;
@@ -1437,9 +1400,6 @@ button.btn-secondary:hover,
 .msq-btn-hero-hub:hover,
 .msq-contact-hub-call:hover,
 .msq-drawer-phone:hover,
-.msq-cat-btn:hover,
-.assembly-btn:hover,
-.assembly-btn:not(.active):hover,
 .pure-liquid-btn.obsidian:hover,
 .card-action-btn:hover {
   transform: translateY(-2px) scale(1.02) !important;
@@ -1456,7 +1416,6 @@ button.btn-secondary:hover,
 .msq-hiw-btn-secondary:active,
 .msq-about-btn-secondary:active,
 .msq-btn-hero-hub:active,
-.msq-cat-btn:active,
 .card-action-btn:active {
   transform: translateY(1px) scale(0.98) !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), inset 0 2px 4px rgba(0, 0, 0, 0.5) !important;
@@ -1547,9 +1506,75 @@ button.btn-secondary:hover,
               0 0 28px rgba(0, 212, 255, 0.45) !important;
 }
 
-.msq-nav-cta:active,
-.msq-drawer-cta:active {
-  transform: translateY(1px) scale(0.98) !important;
+/* ═══════════════════════════════════════════════════════════════
+   EXPLORE OUR PROCESS ASSEMBLY BUTTONS (RESTORED CLEAN & CRISP)
+   ═══════════════════════════════════════════════════════════════ */
+.assembly-controls {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  background: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(0, 119, 238, 0.3) !important;
+  border-radius: 999px !important;
+  padding: 5px 8px !important;
+  margin-top: 1.6rem !important;
+  box-shadow: 0 6px 22px rgba(12, 74, 138, 0.14), inset 0 1px 1px #ffffff !important;
+  z-index: 5 !important;
+  position: relative !important;
+}
+
+.assembly-btn {
+  border: 1px solid transparent !important;
+  background: transparent !important;
+  padding: 0.55rem 1.35rem !important;
+  border-radius: 999px !important;
+  font-size: 0.86rem !important;
+  font-weight: 700 !important;
+  color: #1a436e !important;
+  cursor: pointer !important;
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  outline: none !important;
+  white-space: nowrap !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+  animation: none !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.assembly-btn::before,
+.assembly-btn::after {
+  display: none !important;
+  content: none !important;
+}
+
+.assembly-btn:hover {
+  color: #0077ee !important;
+  background: rgba(0, 119, 238, 0.08) !important;
+  transform: translateY(-1px) !important;
+}
+
+.assembly-btn.active {
+  background: linear-gradient(135deg, #0072de 0%, #0099ff 50%, #00d4ff 100%) !important;
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  border: 1px solid rgba(255, 255, 255, 0.6) !important;
+  box-shadow: 0 4px 16px rgba(0, 119, 238, 0.4), inset 0 1px 1.5px rgba(255, 255, 255, 0.8) !important;
+  transform: translateY(0) !important;
+  animation: none !important;
+}
+
+.assembly-btn > *,
+.assembly-btn span {
+  position: relative !important;
+  z-index: 3 !important;
+  display: inline-block !important;
+  color: inherit !important;
 }
 
 /* Global Click Ripple Wave */
