@@ -11,6 +11,8 @@ audit_*.png
 slice_*.png
 test_*.png
 test_*.html
+test-*.html
+showcase-test.html
 test_*.js
 crop_*.png
 actual_*.png
