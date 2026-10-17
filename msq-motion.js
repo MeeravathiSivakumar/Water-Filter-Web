@@ -276,24 +276,29 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 750);
   }
 
-  // ── 7. LIQUID METAL BUTTON INTERACTIVE RIPPLE EFFECT ──
-  document.addEventListener('click', function (e) {
-    const btn = e.target.closest('a, button, input[type="submit"], .btn-primary, .btn-secondary, .msq-nav-cta, .msq-drawer-cta, .msq-btn-hero-primary, .msq-btn-hero-secondary, .msq-hub-pill, .submit-button, .msq-cat-btn, .card-action-btn');
+  // ── 7. LIQUID METAL BUTTON INTERACTIVE RIPPLE EFFECT (Instant Touch + Click) ──
+  function createLiquidRipple(e) {
+    const btn = e.target.closest('a, button, input[type="submit"], .btn-primary, .btn-secondary, .msq-link, .msq-nav-cta, .msq-drawer-cta, .msq-btn-hero-primary, .msq-btn-hero-secondary, .msq-hub-pill, .submit-button, .msq-cat-btn, .card-action-btn, .assembly-btn, .msq-prod-book-btn, .msq-matrix-cta');
     if (!btn) return;
+    const clientX = e.clientX !== undefined ? e.clientX : (e.touches && e.touches[0] ? e.touches[0].clientX : undefined);
+    const clientY = e.clientY !== undefined ? e.clientY : (e.touches && e.touches[0] ? e.touches[0].clientY : undefined);
+    if (clientX === undefined || clientY === undefined) return;
     const rect = btn.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+    const x = clientX - rect.left;
+    const y = clientY - rect.top;
     const ripple = document.createElement('span');
     ripple.className = 'msq-ripple-wave';
     ripple.style.left = x + 'px';
     ripple.style.top = y + 'px';
-    ripple.style.width = '30px';
-    ripple.style.height = '30px';
+    ripple.style.width = '32px';
+    ripple.style.height = '32px';
     btn.appendChild(ripple);
     setTimeout(function () {
       if (ripple && ripple.parentNode) ripple.parentNode.removeChild(ripple);
     }, 650);
-  });
+  }
+
+  document.addEventListener('pointerdown', createLiquidRipple, { passive: true });
 
   console.log('✓ M SQUARE Watertech interactive systems initialized (10/10 ready).');
 });

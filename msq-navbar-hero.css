@@ -239,45 +239,96 @@ img, video, canvas, svg {
 }
 
 .msq-link {
+  position: relative !important;
+  overflow: hidden !important;
+  isolation: isolate !important;
   color: #dbeafe !important;
   text-decoration: none !important;
   font-size: 0.88rem !important;
   font-weight: 600 !important;
-  padding: 0.45rem 0.95rem !important;
+  padding: 0.46rem 1.05rem !important;
   border-radius: 999px !important;
-  transition: all 0.22s ease !important;
+  border: 1px solid transparent !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
   white-space: nowrap !important;
   letter-spacing: -0.01em !important;
   line-height: 1.2 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  user-select: none !important;
 }
 
-.msq-link:not(.is-active) {
-  color: #dbeafe !important;
-  background: transparent !important;
-  border: 1px solid transparent !important;
-  box-shadow: none !important;
-  text-shadow: none !important;
-  transition: all 0.22s ease !important;
+.msq-link::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  border-radius: inherit !important;
+  background: linear-gradient(115deg, #0052a3 0%, #008cd6 22%, #00b4d8 45%, #00e5c9 70%, #06d6a0 88%, #0093fe 100%) !important;
+  background-size: 260% 260% !important;
+  animation: msqLiquidSurfaceFlow 5.5s ease-in-out infinite !important;
+  opacity: 0 !important;
+  transition: opacity 0.28s ease !important;
+  z-index: -2 !important;
+  pointer-events: none !important;
 }
 
-.msq-link:not(.is-active):hover {
-  color: #00bfff !important;
-  background: rgba(8, 118, 216, 0.16) !important;
-  border-color: rgba(0, 191, 255, 0.28) !important;
-  box-shadow: 0 2px 10px rgba(0, 191, 255, 0.15) !important;
-  transform: translateY(-1px) !important;
+.msq-link::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  border-radius: inherit !important;
+  background: linear-gradient(105deg, transparent 20%, rgba(0, 229, 201, 0.3) 38%, rgba(255, 255, 255, 0.9) 50%, rgba(185, 243, 255, 0.45) 62%, transparent 80%) !important;
+  transform: translateX(-150%) skewX(-20deg) !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  z-index: -1 !important;
 }
 
-/* Active Navigation Indicator (Blue-Green Aqua Liquid-Metal Pill Matching Logo) */
+.msq-link > * {
+  position: relative !important;
+  z-index: 3 !important;
+}
+
+.msq-link:not(.is-active):hover,
+.msq-link:not(.is-active):active,
+.msq-link:not(.is-active):focus-visible {
+  color: #ffffff !important;
+  border-color: rgba(0, 229, 201, 0.75) !important;
+  box-shadow: 0 4px 18px rgba(0, 180, 216, 0.55), 0 0 16px rgba(6, 214, 160, 0.4), inset 0 1px 1px #ffffff !important;
+  transform: translateY(-1.5px) !important;
+  text-shadow: 0 0 10px rgba(0, 229, 201, 0.8) !important;
+}
+
+.msq-link:not(.is-active):hover::before,
+.msq-link:not(.is-active):active::before,
+.msq-link:not(.is-active):focus-visible::before {
+  opacity: 1 !important;
+}
+
+.msq-link:not(.is-active):hover::after,
+.msq-link:not(.is-active):active::after {
+  opacity: 1 !important;
+  animation: msqLiquidSheenSweep 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite !important;
+}
+
+/* Active Navigation Item (Permanent Luminous Liquid Metal Sheen) */
 .msq-link.is-active {
   color: #ffffff !important;
-  background: linear-gradient(125deg, rgba(0, 82, 163, 0.88) 0%, rgba(0, 60, 80, 0.92) 48%, rgba(6, 214, 160, 0.65) 100%) !important;
-  background-size: 200% 200% !important;
-  animation: msqLiquidSurfaceFlow 8s ease-in-out infinite !important;
-  border: 1px solid rgba(0, 229, 201, 0.6) !important;
   font-weight: 700 !important;
-  box-shadow: 0 2px 14px rgba(0, 140, 214, 0.45), 0 0 12px rgba(6, 214, 160, 0.32), inset 0 1px 1px rgba(185, 243, 255, 0.5) !important;
-  text-shadow: 0 0 10px rgba(0, 229, 201, 0.6) !important;
+  border: 1px solid rgba(0, 229, 201, 0.8) !important;
+  box-shadow: 0 4px 20px rgba(0, 140, 214, 0.6), 0 0 18px rgba(6, 214, 160, 0.45), inset 0 1px 1.5px rgba(255, 255, 255, 0.85) !important;
+  text-shadow: 0 0 12px rgba(0, 229, 201, 0.8) !important;
+}
+
+.msq-link.is-active::before {
+  opacity: 1 !important;
+}
+
+.msq-link.is-active::after {
+  opacity: 0.95 !important;
+  animation: msqLiquidSheenSweep 4.5s cubic-bezier(0.4, 0, 0.2, 1) infinite !important;
 }
 
 /* ── RIGHT: Phone + Book Service + Hamburger ── */
@@ -556,20 +607,67 @@ img, video, canvas, svg {
 }
 
 .msq-drawer-link {
+  position: relative !important;
+  overflow: hidden !important;
+  isolation: isolate !important;
   color: #e2e8f0 !important;
   text-decoration: none !important;
   font-size: 1.05rem !important;
   font-weight: 600 !important;
   padding: 0.75rem 1rem !important;
   border-radius: 12px !important;
-  transition: all 0.2s ease !important;
+  border: 1px solid transparent !important;
+  transition: all 0.25s ease !important;
+}
+
+.msq-drawer-link::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  border-radius: inherit !important;
+  background: linear-gradient(115deg, #0052a3 0%, #008cd6 25%, #00b4d8 50%, #00e5c9 75%, #06d6a0 100%) !important;
+  background-size: 240% 240% !important;
+  animation: msqLiquidSurfaceFlow 6s ease-in-out infinite !important;
+  opacity: 0 !important;
+  transition: opacity 0.25s ease !important;
+  z-index: -2 !important;
+}
+
+.msq-drawer-link::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  border-radius: inherit !important;
+  background: linear-gradient(105deg, transparent 20%, rgba(0, 229, 201, 0.3) 38%, rgba(255, 255, 255, 0.9) 50%, rgba(185, 243, 255, 0.45) 62%, transparent 80%) !important;
+  transform: translateX(-150%) skewX(-20deg) !important;
+  opacity: 0 !important;
+  z-index: -1 !important;
+}
+
+.msq-drawer-link > * {
+  position: relative !important;
+  z-index: 3 !important;
 }
 
 .msq-drawer-link:hover,
+.msq-drawer-link:active,
 .msq-drawer-link.is-active {
-  background: rgba(0, 147, 254, 0.18) !important;
-  color: #00d4ff !important;
-  border-left: 3px solid #00d4ff !important;
+  color: #ffffff !important;
+  border-color: rgba(0, 229, 201, 0.6) !important;
+  box-shadow: 0 4px 16px rgba(0, 180, 216, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.5) !important;
+}
+
+.msq-drawer-link:hover::before,
+.msq-drawer-link:active::before,
+.msq-drawer-link.is-active::before {
+  opacity: 1 !important;
+}
+
+.msq-drawer-link:hover::after,
+.msq-drawer-link:active::after,
+.msq-drawer-link.is-active::after {
+  opacity: 1 !important;
+  animation: msqLiquidSheenSweep 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite !important;
 }
 
 .msq-drawer-actions {
@@ -617,14 +715,54 @@ img, video, canvas, svg {
   min-height: 100vh !important;
   display: flex !important;
   align-items: center !important;
-  background-color: #06152b !important;
+  background-color: #0d3463 !important;
   background-image: 
-    radial-gradient(ellipse at 25% 85%, rgba(0, 147, 254, 0.22) 0%, transparent 55%),
-    radial-gradient(circle at 18% 40%, rgba(0, 212, 255, 0.15) 0%, transparent 60%),
-    linear-gradient(90deg, #06152b 0%, #06152b 32%, rgba(6, 21, 43, 0.88) 48%, rgba(6, 21, 43, 0.35) 65%, transparent 82%) !important;
+    radial-gradient(ellipse at 24% 45%, rgba(0, 212, 255, 0.38) 0%, rgba(8, 118, 216, 0.28) 45%, transparent 72%),
+    radial-gradient(circle at 12% 82%, rgba(31, 227, 192, 0.32) 0%, transparent 58%),
+    radial-gradient(ellipse at 38% 18%, rgba(56, 189, 248, 0.35) 0%, transparent 65%),
+    linear-gradient(90deg, #113c72 0%, #134685 32%, rgba(17, 60, 114, 0.86) 54%, rgba(10, 36, 70, 0.48) 72%, transparent 92%) !important;
   padding: clamp(4.6rem, 6.8vh, 5.4rem) 1.5rem clamp(1.0rem, 2.2vh, 1.6rem) !important;
   box-sizing: border-box !important;
   overflow: hidden !important;
+}
+
+/* Ambient Atmospheric Water Caustics & Glows Behind Hero Left Text */
+.msq-hero-ambience {
+  position: absolute !important;
+  inset: 0 !important;
+  pointer-events: none !important;
+  z-index: 1 !important;
+  overflow: hidden !important;
+}
+
+.msq-glow-orb-1 {
+  position: absolute !important;
+  width: 580px !important;
+  height: 580px !important;
+  border-radius: 50% !important;
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.22) 0%, rgba(8, 118, 216, 0.12) 45%, transparent 70%) !important;
+  top: 10% !important;
+  left: 2% !important;
+  filter: blur(40px) !important;
+  animation: msqAmbientPulse 9s ease-in-out infinite alternate !important;
+}
+
+.msq-glow-orb-2 {
+  position: absolute !important;
+  width: 440px !important;
+  height: 440px !important;
+  border-radius: 50% !important;
+  background: radial-gradient(circle, rgba(31, 227, 192, 0.18) 0%, rgba(0, 147, 254, 0.08) 50%, transparent 70%) !important;
+  bottom: 8% !important;
+  left: 18% !important;
+  filter: blur(50px) !important;
+  animation: msqAmbientPulse 12s ease-in-out infinite alternate-reverse !important;
+}
+
+@keyframes msqAmbientPulse {
+  0% { transform: scale(0.92) translate(0, 0); opacity: 0.7; }
+  50% { transform: scale(1.08) translate(15px, -10px); opacity: 1; }
+  100% { transform: scale(0.96) translate(-10px, 12px); opacity: 0.75; }
 }
 
 /* Master Scene Hardware-Accelerated SVG Interactive Stage */
@@ -835,7 +973,13 @@ button.btn-primary,
 input[type="submit"],
 button[type="submit"]:not(.msq-about-card-arrow-btn),
 .msq-faq-card-btn-call,
-.msq-faq-cta-btn {
+.msq-faq-cta-btn,
+.msq-prod-book-btn,
+.msq-matrix-cta,
+.msq-btn-find-more,
+.showcase-cta,
+.pure-liquid-btn,
+.assembly-btn.active {
   position: relative !important;
   overflow: hidden !important;
   isolation: isolate !important;
@@ -906,7 +1050,13 @@ button.btn-primary::before,
 input[type="submit"]::before,
 button[type="submit"]:not(.msq-about-card-arrow-btn)::before,
 .msq-faq-card-btn-call::before,
-.msq-faq-cta-btn::before {
+.msq-faq-cta-btn::before,
+.msq-prod-book-btn::before,
+.msq-matrix-cta::before,
+.msq-btn-find-more::before,
+.showcase-cta::before,
+.pure-liquid-btn::before,
+.assembly-btn.active::before {
   content: "" !important;
   position: absolute !important;
   inset: 2px !important;
@@ -943,7 +1093,13 @@ button.btn-primary::after,
 .button-primary::after,
 .w-button:not(.btn-secondary):not(.msq-btn-secondary):not(.msq-about-btn-secondary)::after,
 .msq-faq-card-btn-call::after,
-.msq-faq-cta-btn::after {
+.msq-faq-cta-btn::after,
+.msq-prod-book-btn::after,
+.msq-matrix-cta::after,
+.msq-btn-find-more::after,
+.showcase-cta::after,
+.pure-liquid-btn::after,
+.assembly-btn.active::after {
   content: "" !important;
   position: absolute !important;
   inset: 0 !important;
@@ -984,6 +1140,12 @@ button.btn-primary::after,
 .msq-doorstep-book-btn > *,
 .msq-faq-card-btn-call > *,
 .msq-faq-cta-btn > *,
+.msq-prod-book-btn > *,
+.msq-matrix-cta > *,
+.msq-btn-find-more > *,
+.showcase-cta > *,
+.pure-liquid-btn > *,
+.assembly-btn.active > *,
 .msq-nav-cta > * {
   position: relative !important;
   z-index: 3 !important;
@@ -1016,7 +1178,13 @@ button.btn-primary:hover,
 input[type="submit"]:hover,
 button[type="submit"]:hover,
 .msq-faq-card-btn-call:hover,
-.msq-faq-cta-btn:hover {
+.msq-faq-cta-btn:hover,
+.msq-prod-book-btn:hover,
+.msq-matrix-cta:hover,
+.msq-btn-find-more:hover,
+.showcase-cta:hover,
+.pure-liquid-btn:hover,
+.assembly-btn.active:hover {
   transform: translateY(-2px) scale(1.025) !important;
   animation-duration: 1.5s !important;
   border-color: #00bfff !important;
@@ -1075,6 +1243,9 @@ button.btn-secondary,
 .msq-contact-hub-call,
 .msq-drawer-phone,
 .msq-cat-btn,
+.assembly-btn,
+.assembly-btn:not(.active),
+.pure-liquid-btn.obsidian,
 .card-action-btn {
   position: relative !important;
   overflow: hidden !important;
@@ -1137,6 +1308,9 @@ button.btn-secondary::before,
 .msq-contact-hub-call::before,
 .msq-drawer-phone::before,
 .msq-cat-btn::before,
+.assembly-btn::before,
+.assembly-btn:not(.active)::before,
+.pure-liquid-btn.obsidian::before,
 .card-action-btn::before {
   content: "" !important;
   position: absolute !important;
@@ -1168,6 +1342,9 @@ button.btn-secondary::after,
 .msq-contact-hub-call::after,
 .msq-drawer-phone::after,
 .msq-cat-btn::after,
+.assembly-btn::after,
+.assembly-btn:not(.active)::after,
+.pure-liquid-btn.obsidian::after,
 .card-action-btn::after {
   content: "" !important;
   position: absolute !important;
@@ -1203,6 +1380,9 @@ button.btn-secondary::after,
 .msq-drawer-phone > *,
 .msq-btn-hero-hub > *,
 .msq-cat-btn > *,
+.assembly-btn > *,
+.assembly-btn:not(.active) > *,
+.pure-liquid-btn.obsidian > *,
 .card-action-btn > * {
   position: relative !important;
   z-index: 3 !important;
@@ -1226,6 +1406,9 @@ button.btn-secondary:hover,
 .msq-contact-hub-call:hover,
 .msq-drawer-phone:hover,
 .msq-cat-btn:hover,
+.assembly-btn:hover,
+.assembly-btn:not(.active):hover,
+.pure-liquid-btn.obsidian:hover,
 .card-action-btn:hover {
   transform: translateY(-2px) scale(1.02) !important;
   animation-duration: 1.5s !important;
@@ -1650,11 +1833,11 @@ button.btn-secondary:hover,
     padding-bottom: 3.5rem !important;
     min-height: auto !important;
     position: relative !important;
-    background-color: #06152b !important;
+    background-color: #0c264a !important;
     background-image: 
-      radial-gradient(circle at 50% 12%, rgba(0, 147, 254, 0.22) 0%, transparent 60%),
-      radial-gradient(circle at 50% 88%, rgba(0, 212, 255, 0.14) 0%, transparent 60%),
-      linear-gradient(180deg, #06152b 0%, #081d38 50%, #06152b 100%) !important;
+      radial-gradient(circle at 50% 15%, rgba(0, 212, 255, 0.28) 0%, transparent 65%),
+      radial-gradient(circle at 50% 85%, rgba(31, 227, 192, 0.18) 0%, transparent 65%),
+      linear-gradient(180deg, #0d284f 0%, #113565 50%, #0c264a 100%) !important;
   }
   .msq-hero::before {
     display: none !important;

@@ -637,11 +637,12 @@
       #waterSimulationCanvas,
       #filtrationCirculationCanvas {
         position: absolute !important;
-        left: -15px !important;
+        left: 0 !important;
         top: 0 !important;
         transform: none !important;
-        width: 110px !important;
-        height: 520px !important;
+        width: 100% !important;
+        height: 100% !important;
+        pointer-events: none !important;
       }
       .cartridges-assembly {
         position: absolute !important;
@@ -3016,11 +3017,13 @@ document.addEventListener("DOMContentLoaded", function() {
     function resize() {
       const sRect = stage.getBoundingClientRect();
       const isDesktop = window.innerWidth > 1024;
-      width = isDesktop ? 520 : sRect.width;
-      height = sRect.height + 30;
+      width = isDesktop ? 520 : Math.round(sRect.width);
+      height = Math.round(sRect.height + 30);
 
-      canvas.width = width * dpr;
-      canvas.height = height * dpr;
+      canvas.width = Math.round(width * dpr);
+      canvas.height = Math.round(height * dpr);
+      canvas.style.width = width + 'px';
+      canvas.style.height = height + 'px';
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       updateCoords();
     }
@@ -3039,7 +3042,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // Helix mathematical parameters: 4 complete snake coils around the 4 stages
       const loops = 4.2;
-      const helixRadius = 45;
+      const isMobile = window.innerWidth <= 768;
+      const helixRadius = isMobile ? 32 : 45;
 
       function getHelixAt(t, tOffset = 0) {
         const clampedT = Math.max(0, Math.min(1, t));

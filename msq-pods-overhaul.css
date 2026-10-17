@@ -119,12 +119,12 @@
 }
 
 .msq-pods-hero-title {
-  font-size: clamp(2.4rem, 3.6vw, 3.65rem) !important;
-  line-height: 1.1 !important;
-  font-weight: 850 !important;
-  letter-spacing: -0.028em !important;
+  font-size: clamp(3.4rem, 4.8vw, 4.8rem) !important;
+  line-height: 1.08 !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.035em !important;
   color: #ffffff !important;
-  margin: 0 0 0.95rem 0 !important;
+  margin: 0 0 1.25rem 0 !important;
 }
 
 .msq-pods-hero.light-blue-theme .msq-pods-hero-title {
@@ -145,11 +145,11 @@
 }
 
 .msq-pods-hero-desc {
-  font-size: clamp(0.96rem, 1.12vw, 1.08rem) !important;
-  line-height: 1.55 !important;
+  font-size: clamp(1.08rem, 1.35vw, 1.25rem) !important;
+  line-height: 1.6 !important;
   color: rgba(224, 242, 254, 0.88) !important;
-  max-width: 39rem !important;
-  margin: 0 0 1.2rem 0 !important;
+  max-width: 44rem !important;
+  margin: 0 0 1.5rem 0 !important;
 }
 
 .msq-pods-hero.light-blue-theme .msq-pods-hero-desc {
@@ -233,19 +233,31 @@
   transition: all 0.28s ease;
 }
 
-.msq-pods-hero.light-blue-theme .msq-btn-hero-hub {
-  background: #ffffff;
-  color: #0a2540;
-  padding: 0.68rem 1.15rem;
-  font-size: 0.82rem;
-  border: 1.5px solid rgba(0, 87, 168, 0.25);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+.msq-pods-hero.light-blue-theme .msq-btn-hero-hub,
+.msq-pods-hero.light-blue-theme .msq-hub-pill {
+  background: #ffffff !important;
+  color: #0057a8 !important;
+  padding: 0.68rem 1.15rem !important;
+  font-size: 0.82rem !important;
+  border: 1.5px solid rgba(0, 87, 168, 0.25) !important;
+  box-shadow: 0 4px 14px rgba(0, 87, 168, 0.1) !important;
 }
 
-.msq-btn-hero-hub:hover {
-  background: rgba(255, 255, 255, 0.16);
-  border-color: rgba(56, 189, 248, 0.5);
-  transform: translateY(-2px);
+.msq-pods-hero.light-blue-theme .msq-hub-pill strong {
+  color: #0c1e38 !important;
+}
+
+.msq-pods-hero.light-blue-theme .msq-hub-pill .msq-hub-svg {
+  stroke: #0093fe !important;
+}
+
+.msq-btn-hero-hub:hover,
+.msq-pods-hero.light-blue-theme .msq-hub-pill:hover {
+  background: #ffffff !important;
+  border-color: #0093fe !important;
+  color: #0093fe !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(0, 147, 254, 0.22) !important;
 }
 
 .msq-pods-hero.light-blue-theme .msq-btn-hero-hub:hover {
@@ -986,9 +998,9 @@
   }
 
   .msq-pods-hero-title {
-    font-size: clamp(1.85rem, 6.8vw, 2.45rem) !important;
-    line-height: 1.18 !important;
-    margin-bottom: 0.85rem !important;
+    font-size: clamp(2.2rem, 7.8vw, 3.0rem) !important;
+    line-height: 1.12 !important;
+    margin-bottom: 0.95rem !important;
   }
 
   .msq-pods-hero-desc {

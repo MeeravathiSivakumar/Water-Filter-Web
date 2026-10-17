@@ -154,24 +154,33 @@
     }
 
     function drawWaterBubble(targetCtx, b, x, y, r) {
-      if (r <= 0.6) return;
+      if (!r || r <= 1.0) return;
+      const safeR = Math.max(1.0, r);
+      const innerR = Math.max(0, safeR * 0.08);
 
       const col = BUBBLE_PALETTE[b.colorIdx % BUBBLE_PALETTE.length];
 
-      // 1. Translucent aquatic spherical body gradient
-      const grad = targetCtx.createRadialGradient(
-        x - r * 0.28, y - r * 0.28, r * 0.08,
-        x, y, r
-      );
-      grad.addColorStop(0, 'rgba(255, 255, 255, 0.75)');
-      grad.addColorStop(0.35, col.bg);
-      grad.addColorStop(0.85, col.bg);
-      grad.addColorStop(1, col.rim);
+      try {
+        // 1. Translucent aquatic spherical body gradient
+        const grad = targetCtx.createRadialGradient(
+          x - safeR * 0.28, y - safeR * 0.28, innerR,
+          x, y, safeR
+        );
+        grad.addColorStop(0, 'rgba(255, 255, 255, 0.75)');
+        grad.addColorStop(0.35, col.bg);
+        grad.addColorStop(0.85, col.bg);
+        grad.addColorStop(1, col.rim);
 
-      targetCtx.fillStyle = grad;
-      targetCtx.beginPath();
-      targetCtx.arc(x, y, r, 0, Math.PI * 2);
-      targetCtx.fill();
+        targetCtx.fillStyle = grad;
+        targetCtx.beginPath();
+        targetCtx.arc(x, y, r, 0, Math.PI * 2);
+        targetCtx.fill();
+      } catch (e) {
+        targetCtx.fillStyle = col.bg;
+        targetCtx.beginPath();
+        targetCtx.arc(x, y, r, 0, Math.PI * 2);
+        targetCtx.fill();
+      }
 
       // 2. Delicate outer meniscus ring
       targetCtx.strokeStyle = 'rgba(255, 255, 255, 0.75)';
@@ -214,12 +223,16 @@
       offCtx.fillRect(0, 0, w, h);
 
       // B. Ambient internal water caustics
-      const causticGrad = offCtx.createRadialGradient(w * 0.45, h * 0.5, 15, w * 0.5, h * 0.5, w * 0.6);
-      causticGrad.addColorStop(0, 'rgba(0, 229, 255, 0.42)');
-      causticGrad.addColorStop(0.5, 'rgba(31, 227, 192, 0.22)');
-      causticGrad.addColorStop(1, 'transparent');
-      offCtx.fillStyle = causticGrad;
-      offCtx.fillRect(0, 0, w, h);
+      try {
+        const causticR0 = Math.max(0, 10);
+        const causticR1 = Math.max(causticR0 + 5, (w || 540) * 0.6);
+        const causticGrad = offCtx.createRadialGradient(w * 0.45, h * 0.5, causticR0, w * 0.5, h * 0.5, causticR1);
+        causticGrad.addColorStop(0, 'rgba(0, 229, 255, 0.42)');
+        causticGrad.addColorStop(0.5, 'rgba(31, 227, 192, 0.22)');
+        causticGrad.addColorStop(1, 'transparent');
+        offCtx.fillStyle = causticGrad;
+        offCtx.fillRect(0, 0, w, h);
+      } catch (e) {}
 
       // C. Update & Draw Living Water Bubbles
       const reachR = isMobile ? 65 : 95;
