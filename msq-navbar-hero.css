@@ -78,7 +78,8 @@ img, video, canvas, svg {
   margin: 0 !important;
   width: calc(100% - 28px) !important;
   max-width: 1360px !important;
-  height: 68px !important;
+  height: 60px !important;
+  max-height: 60px !important;
   background: var(--msq-glass-bg) !important;
   backdrop-filter: blur(20px) saturate(160%) !important;
   -webkit-backdrop-filter: blur(20px) saturate(160%) !important;
@@ -215,8 +216,8 @@ img, video, canvas, svg {
 
 .msq-logo-img {
   width: auto !important;
-  height: 48px !important;
-  max-height: 52px !important;
+  height: 38px !important;
+  max-height: 40px !important;
   display: block !important;
   object-fit: contain !important;
   filter: drop-shadow(0 2px 10px rgba(0, 191, 255, 0.4)) !important;
@@ -224,7 +225,7 @@ img, video, canvas, svg {
 }
 
 .msq-nav-logo:hover .msq-logo-img {
-  transform: scale(1.03) !important;
+  transform: scale(1.02) !important;
   filter: drop-shadow(0 4px 16px rgba(0, 212, 255, 0.65)) !important;
 }
 
@@ -244,9 +245,9 @@ img, video, canvas, svg {
   isolation: isolate !important;
   color: #ffffff !important;
   text-decoration: none !important;
-  font-size: 0.88rem !important;
+  font-size: 0.84rem !important;
   font-weight: 700 !important;
-  padding: 0.52rem 1.15rem !important;
+  padding: 0.38rem 0.95rem !important;
   border-radius: 999px !important;
   border: 1px solid rgba(255, 255, 255, 0.32) !important;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.14) 0%, rgba(14, 68, 140, 0.38) 50%, rgba(6, 25, 55, 0.55) 100%) !important;
@@ -293,8 +294,8 @@ img, video, canvas, svg {
   background: linear-gradient(115deg, #0057c8 0%, #0093fe 30%, #00d4ff 70%, #06d6a0 100%) !important;
   background-size: 200% 200% !important;
   animation: msqLiquidSurfaceFlow 4s ease-in-out infinite !important;
-  box-shadow: 0 4px 20px rgba(0, 180, 216, 0.6), 0 0 16px rgba(6, 214, 160, 0.45), inset 0 1px 1.5px #ffffff !important;
-  transform: translateY(-2px) scale(1.03) !important;
+  box-shadow: 0 4px 16px rgba(0, 180, 216, 0.55), 0 0 12px rgba(6, 214, 160, 0.4), inset 0 1px 1.5px #ffffff !important;
+  transform: translateY(-1px) !important;
 }
 
 .msq-link:not(.is-active):hover::after,
@@ -311,8 +312,8 @@ img, video, canvas, svg {
   background: linear-gradient(115deg, #0057c8 0%, #0093fe 35%, #00d4ff 70%, #06d6a0 100%) !important;
   background-size: 200% 200% !important;
   animation: msqLiquidSurfaceFlow 4s ease-in-out infinite !important;
-  box-shadow: 0 4px 22px rgba(0, 140, 214, 0.65), 0 0 18px rgba(0, 212, 255, 0.5), inset 0 1.5px 2px rgba(255, 255, 255, 0.9) !important;
-  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 18px rgba(0, 140, 214, 0.6), 0 0 14px rgba(0, 212, 255, 0.45), inset 0 1.5px 2px rgba(255, 255, 255, 0.9) !important;
+  transform: translateY(-0.5px) !important;
 }
 
 .msq-link.is-active::before {
@@ -337,7 +338,7 @@ img, video, canvas, svg {
   display: inline-flex !important;
   align-items: center !important;
   gap: 7px !important;
-  padding: 0.52rem 1.2rem !important;
+  padding: 0.4rem 1rem !important;
   border-radius: 999px !important;
   position: relative !important;
   overflow: hidden !important;
@@ -346,7 +347,7 @@ img, video, canvas, svg {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25), inset 0 1px 1.5px rgba(255, 255, 255, 0.7) !important;
   color: #ffffff !important;
   text-decoration: none !important;
-  font-size: 0.86rem !important;
+  font-size: 0.82rem !important;
   font-weight: 700 !important;
   letter-spacing: 0.02em !important;
   transition: all 0.25s ease !important;
@@ -382,12 +383,12 @@ img, video, canvas, svg {
   background: linear-gradient(125deg, #0757c8 0%, #0093fe 50%, #00d4ff 100%) !important;
   border-color: #ffffff !important;
   color: #ffffff !important;
-  transform: translateY(-2px) scale(1.03) !important;
-  box-shadow: 0 6px 22px rgba(0, 191, 255, 0.55), inset 0 1px 2px #ffffff !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 16px rgba(0, 191, 255, 0.5), inset 0 1px 2px #ffffff !important;
 }
 
 .msq-nav-phone:hover .msq-phone-svg {
-  transform: scale(1.1) rotate(-8deg) !important;
+  transform: rotate(-8deg) !important;
   stroke: #ffffff !important;
 }
 
@@ -406,7 +407,7 @@ img, video, canvas, svg {
   align-items: center !important;
   justify-content: center !important;
   gap: 7px !important;
-  padding: 0.54rem 1.45rem !important;
+  padding: 0.44rem 1.25rem !important;
   border-radius: 999px !important;
   position: relative !important;
   overflow: hidden !important;
@@ -425,11 +426,11 @@ img, video, canvas, svg {
   animation: msqLiquidMetalSpin 4s linear infinite !important;
   color: #ffffff !important;
   text-decoration: none !important;
-  font-size: 0.84rem !important;
+  font-size: 0.82rem !important;
   font-weight: 800 !important;
   letter-spacing: 0.05em !important;
   border: 1px solid rgba(255, 255, 255, 0.75) !important;
-  box-shadow: 0 4px 20px rgba(0, 147, 254, 0.6), 0 0 18px rgba(0, 212, 255, 0.5), inset 0 1px 2px #ffffff !important;
+  box-shadow: 0 4px 16px rgba(0, 147, 254, 0.55), 0 0 14px rgba(0, 212, 255, 0.45), inset 0 1px 2px #ffffff !important;
   transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1) !important;
   white-space: nowrap !important;
   cursor: pointer !important;
@@ -474,9 +475,9 @@ img, video, canvas, svg {
 }
 
 .msq-nav-cta:hover {
-  transform: translateY(-2px) scale(1.025) !important;
+  transform: translateY(-1px) !important;
   border-color: #00e5c9 !important;
-  box-shadow: 0 8px 30px rgba(0, 180, 216, 0.75), 0 0 24px rgba(6, 214, 160, 0.65), inset 0 1px 2px #ffffff !important;
+  box-shadow: 0 6px 24px rgba(0, 180, 216, 0.65), 0 0 18px rgba(6, 214, 160, 0.55), inset 0 1px 2px #ffffff !important;
   color: #ffffff !important;
 }
 
@@ -1129,11 +1130,16 @@ button.btn-primary::after,
 
 /* Primary Button Text / Icons */
 .msq-liquid-btn-primary > *,
+.msq-liquid-btn-primary span,
 .msq-btn-hero-primary > *,
+.msq-btn-hero-primary span,
 .msq-btn-hero-cta > *,
 .msq-hiw-btn-primary > *,
+.msq-hiw-btn-primary span,
 .msq-about-btn-primary > *,
+.msq-about-btn-primary span,
 .btn-primary > *,
+.btn-primary span,
 .button-primary > *,
 .msq-btn-primary > *,
 .msq-hero-cta-btn > *,
@@ -1149,14 +1155,17 @@ button.btn-primary::after,
 .msq-doorstep-book-btn > *,
 .msq-faq-card-btn-call > *,
 .msq-faq-cta-btn > *,
+.msq-faq-cta-btn span,
 .msq-prod-book-btn > *,
 .msq-matrix-cta > *,
 .msq-btn-find-more > *,
 .showcase-cta > *,
 .pure-liquid-btn > *,
-.msq-nav-cta > * {
+.msq-nav-cta > *,
+.msq-nav-cta span {
   position: relative !important;
-  z-index: 3 !important;
+  z-index: 5 !important;
+  color: #ffffff !important;
   text-shadow: 0 1px 2px rgba(3, 12, 25, 0.7) !important;
 }
 
@@ -1850,7 +1859,8 @@ button.btn-secondary:hover,
 @media screen and (max-width: 820px) {
   .msq-navbar {
     top: 10px !important;
-    height: 56px !important;
+    height: 54px !important;
+    max-height: 54px !important;
     width: calc(100% - 20px) !important;
     padding: 0 0.85rem !important;
   }
@@ -1871,8 +1881,8 @@ button.btn-secondary:hover,
     width: 16px !important;
   }
   .msq-logo-img {
-    height: 26px !important;
-    max-width: 110px !important;
+    height: 24px !important;
+    max-width: 105px !important;
   }
   .msq-nav-right {
     display: flex !important;
@@ -1881,12 +1891,12 @@ button.btn-secondary:hover,
     flex-shrink: 0 !important;
   }
   .msq-nav-cta {
-    padding: 0.38rem 0.85rem !important;
-    font-size: 0.76rem !important;
+    padding: 0.35rem 0.8rem !important;
+    font-size: 0.74rem !important;
     flex-shrink: 0 !important;
   }
   .msq-hero {
-    padding-top: 6.5rem !important;
+    padding-top: 7.25rem !important;
     padding-bottom: 3.5rem !important;
     min-height: auto !important;
     position: relative !important;
@@ -1924,7 +1934,8 @@ button.btn-secondary:hover,
   }
   .msq-hero-eyebrow {
     order: 1 !important;
-    margin-bottom: 0.35rem !important;
+    margin-top: 0.85rem !important;
+    margin-bottom: 0.5rem !important;
   }
   .msq-hero-title {
     order: 2 !important;
@@ -2078,7 +2089,8 @@ button.btn-secondary:hover,
     margin: 0 !important;
     width: calc(100% - 16px) !important;
     max-width: 100% !important;
-    height: 52px !important;
+    height: 50px !important;
+    max-height: 50px !important;
     padding: 0 0.65rem !important;
     box-sizing: border-box !important;
   }
@@ -2093,9 +2105,9 @@ button.btn-secondary:hover,
     flex-shrink: 0 !important;
   }
   .msq-logo-img {
-    height: 24px !important;
+    height: 22px !important;
     width: auto !important;
-    max-width: 110px !important;
+    max-width: 100px !important;
   }
   .msq-nav-right {
     display: flex !important;
@@ -2104,15 +2116,15 @@ button.btn-secondary:hover,
     flex-shrink: 0 !important;
   }
   .msq-nav-cta {
-    padding: 0.32rem 0.65rem !important;
+    padding: 0.3rem 0.65rem !important;
     font-size: 0.72rem !important;
     gap: 3px !important;
     flex-shrink: 0 !important;
   }
   .msq-hamburger {
     display: flex !important;
-    width: 34px !important;
-    height: 34px !important;
+    width: 32px !important;
+    height: 32px !important;
     flex-shrink: 0 !important;
     padding: 0 !important;
   }
@@ -2120,7 +2132,7 @@ button.btn-secondary:hover,
     width: 15px !important;
   }
   .msq-hero {
-    padding-top: 5.5rem !important;
+    padding-top: 7.25rem !important;
     padding-left: 1rem !important;
     padding-right: 1rem !important;
     padding-bottom: 3.5rem !important;
@@ -2138,6 +2150,8 @@ button.btn-secondary:hover,
   .msq-hero-eyebrow {
     font-size: 0.68rem !important;
     padding: 0.35rem 0.75rem !important;
+    margin-top: 0.85rem !important;
+    margin-bottom: 0.5rem !important;
     white-space: normal !important;
     text-align: center !important;
     max-width: 100% !important;

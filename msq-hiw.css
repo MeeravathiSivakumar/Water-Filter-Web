@@ -181,6 +181,16 @@ header.hero-parent.dark.msq-hiw-hero .hero-title-parent.top,
   box-shadow: 0 4px 20px rgba(8, 118, 216, 0.45), 0 0 14px rgba(0, 191, 255, 0.35), inset 0 1px 1.5px rgba(185, 243, 255, 0.75), inset 0 -1.5px 3px rgba(6, 29, 59, 0.85) !important;
   transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1) !important;
   animation: msqLiquidMetalFlow 5s ease-in-out infinite !important;
+  isolation: isolate !important;
+}
+
+.msq-hiw-btn-primary > *,
+.msq-hiw-btn-primary span {
+  position: relative !important;
+  z-index: 5 !important;
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7) !important;
 }
 
 .msq-hiw-btn-primary::after {

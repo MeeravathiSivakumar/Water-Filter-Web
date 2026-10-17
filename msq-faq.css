@@ -265,6 +265,17 @@ header.hero-parent.no-hide-auto::after {
   border-radius: 999px !important;
   box-shadow: 0 4px 18px rgba(0, 147, 254, 0.45) !important;
   transition: all 0.2s ease !important;
+  isolation: isolate !important;
+  position: relative !important;
+}
+
+.msq-faq-cta-btn > *,
+.msq-faq-cta-btn span {
+  position: relative !important;
+  z-index: 5 !important;
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7) !important;
 }
 
 .msq-faq-cta-btn:hover {
