@@ -247,12 +247,12 @@ img, video, canvas, svg {
   text-decoration: none !important;
   font-size: 0.81rem !important;
   font-weight: 700 !important;
-  padding: 0.32rem 0.78rem !important;
+  padding: 0.32rem 0.72rem !important;
   border-radius: 999px !important;
   border: 1px solid rgba(255, 255, 255, 0.28) !important;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(14, 68, 140, 0.35) 50%, rgba(6, 25, 55, 0.5) 100%) !important;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.55) !important;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.5) !important;
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease !important;
   white-space: nowrap !important;
   letter-spacing: 0.01em !important;
   line-height: 1.2 !important;
@@ -261,6 +261,8 @@ img, video, canvas, svg {
   justify-content: center !important;
   cursor: pointer !important;
   user-select: none !important;
+  box-sizing: border-box !important;
+  transform: none !important;
 }
 
 .msq-link::before {
@@ -294,7 +296,7 @@ img, video, canvas, svg {
   background: linear-gradient(115deg, #0057c8 0%, #0093fe 30%, #00d4ff 70%, #06d6a0 100%) !important;
   background-size: 200% 200% !important;
   animation: msqLiquidSurfaceFlow 4s ease-in-out infinite !important;
-  box-shadow: 0 2px 10px rgba(0, 180, 216, 0.45), inset 0 1px 1.5px #ffffff !important;
+  box-shadow: 0 1px 6px rgba(0, 180, 216, 0.35), inset 0 1px 1.5px #ffffff !important;
   transform: none !important;
 }
 
@@ -307,12 +309,13 @@ img, video, canvas, svg {
 /* Active Navigation Item (Permanent Radiant Liquid Metal Chrome Pill) */
 .msq-link.is-active {
   color: #ffffff !important;
-  font-weight: 800 !important;
+  font-weight: 700 !important;
+  padding: 0.32rem 0.72rem !important;
   border: 1px solid rgba(255, 255, 255, 0.65) !important;
   background: linear-gradient(115deg, #0057c8 0%, #0093fe 35%, #00d4ff 70%, #06d6a0 100%) !important;
   background-size: 200% 200% !important;
   animation: msqLiquidSurfaceFlow 4s ease-in-out infinite !important;
-  box-shadow: 0 2px 12px rgba(0, 140, 214, 0.5), inset 0 1.2px 1.5px rgba(255, 255, 255, 0.85) !important;
+  box-shadow: 0 1px 8px rgba(0, 140, 214, 0.4), inset 0 1.2px 1.5px rgba(255, 255, 255, 0.85) !important;
   transform: none !important;
 }
 
@@ -632,14 +635,16 @@ img, video, canvas, svg {
   isolation: isolate !important;
   color: #ffffff !important;
   text-decoration: none !important;
-  font-size: 1.05rem !important;
+  font-size: 0.95rem !important;
   font-weight: 700 !important;
-  padding: 0.75rem 1.15rem !important;
+  padding: 0.65rem 1.1rem !important;
   border-radius: 999px !important;
   border: 1px solid rgba(255, 255, 255, 0.25) !important;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(14, 68, 140, 0.35) 100%) !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.6) !important;
-  transition: all 0.25s ease !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.45) !important;
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease !important;
+  transform: none !important;
+  box-sizing: border-box !important;
 }
 
 .msq-drawer-link::before {
@@ -670,10 +675,11 @@ img, video, canvas, svg {
 .msq-drawer-link:active,
 .msq-drawer-link.is-active {
   color: #ffffff !important;
+  font-weight: 700 !important;
   border-color: rgba(0, 229, 201, 0.85) !important;
   background: linear-gradient(115deg, #0057c8 0%, #0093fe 35%, #00d4ff 70%, #06d6a0 100%) !important;
-  box-shadow: 0 4px 18px rgba(0, 180, 216, 0.55), inset 0 1px 1.5px rgba(255, 255, 255, 0.8) !important;
-  transform: translateX(4px) !important;
+  box-shadow: 0 2px 10px rgba(0, 180, 216, 0.4), inset 0 1px 1.5px rgba(255, 255, 255, 0.8) !important;
+  transform: none !important;
 }
 
 .msq-drawer-link:hover::after,

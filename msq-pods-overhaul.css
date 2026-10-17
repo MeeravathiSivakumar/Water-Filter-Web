@@ -148,7 +148,14 @@
 }
 
 .msq-pods-hero.light-blue-theme .msq-pods-hero-title {
-  color: #06152b !important;
+  color: #004d91 !important;
+  text-shadow: none !important;
+}
+
+.msq-pods-hero.light-blue-theme .msq-pods-title-primary {
+  color: #004d91 !important;
+  display: inline !important;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9) !important;
 }
 
 .msq-pods-hero-title .cyan-gradient {
@@ -158,10 +165,11 @@
 }
 
 .msq-pods-hero.light-blue-theme .msq-pods-hero-title .cyan-gradient {
-  background: linear-gradient(135deg, #0057a8 0%, #0093fe 55%, #00b4d8 100%) !important;
+  background: linear-gradient(135deg, #0062b8 0%, #0093fe 55%, #00b4d8 100%) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   display: inline-block !important;
+  text-shadow: none !important;
 }
 
 .msq-pods-hero-desc {

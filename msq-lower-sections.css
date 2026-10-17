@@ -1546,6 +1546,76 @@
   line-height: 1.5;
 }
 
+/* ── Hub Contact Action Cards ── */
+.msq-hub-contact-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 1.5rem !important;
+  max-width: 960px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  position: relative !important;
+  z-index: 2 !important;
+  box-sizing: border-box !important;
+}
+
+.msq-hub-contact-card {
+  border-radius: 18px !important;
+  padding: 1.8rem !important;
+  text-align: left !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25) !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.msq-hub-contact-card:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35) !important;
+}
+
+.msq-hub-contact-card.kavankarai {
+  background: linear-gradient(135deg, rgba(0, 87, 168, 0.55) 0%, rgba(10, 22, 40, 0.85) 100%) !important;
+  border: 1.5px solid rgba(0, 180, 216, 0.4) !important;
+}
+
+.msq-hub-contact-card.kolathur {
+  background: linear-gradient(135deg, rgba(0, 119, 182, 0.55) 0%, rgba(10, 22, 40, 0.85) 100%) !important;
+  border: 1.5px solid rgba(0, 180, 216, 0.4) !important;
+}
+
+.msq-hub-contact-card .msq-hub-tag {
+  font-size: 0.8rem !important;
+  text-transform: uppercase !important;
+  color: #38bdf8 !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  margin-bottom: 0.4rem !important;
+}
+
+.msq-hub-contact-card .msq-hub-title {
+  font-size: 1.35rem !important;
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  margin: 0 0 0.5rem !important;
+}
+
+.msq-hub-contact-card .msq-hub-desc {
+  font-size: 0.88rem !important;
+  color: rgba(255, 255, 255, 0.78) !important;
+  line-height: 1.5 !important;
+  margin: 0 0 1.25rem !important;
+  word-break: break-word !important;
+}
+
+.msq-hub-contact-card .msq-hub-btn-wrap {
+  display: flex !important;
+  gap: 0.75rem !important;
+  flex-wrap: wrap !important;
+}
+
 /* ── 8. MASTER 4-COLUMN PROFESSIONAL FOOTER ── */
 .msq-footer-master {
   background: #030a14;
@@ -1793,6 +1863,29 @@
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
+  .msq-hub-contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+  .msq-hub-contact-card {
+    padding: 1.35rem 1.15rem !important;
+    border-radius: 16px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .msq-hub-contact-card .msq-btn-hub-call,
+  .msq-hub-contact-card .msq-btn-hub-wa {
+    flex: 1 1 auto !important;
+    padding: 0.65rem 1rem !important;
+    font-size: 0.85rem !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
   .msq-footer-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -1897,6 +1990,20 @@
   .mode-switch-btn {
     padding: 0.38rem 0.95rem;
     font-size: 0.76rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .msquare-prefooter-cta {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  .msq-hub-contact-card {
+    padding: 1.1rem 0.85rem !important;
+  }
+  .msq-hub-contact-card .msq-btn-hub-call,
+  .msq-hub-contact-card .msq-btn-hub-wa {
+    width: 100% !important;
   }
 }
 
