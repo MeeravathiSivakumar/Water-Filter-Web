@@ -49,23 +49,43 @@
   overflow: hidden !important;
 }
 
+/* Dynamic Water Video Background Layer */
+.msq-pods-hero-video-bg-wrap,
 .msq-pods-hero-bg-creative {
-  position: absolute;
-  inset: 0;
-  background: url('assets/msq-pods-water-hero-bg.jpg') center bottom / cover no-repeat;
-  opacity: 1;
-  z-index: 1;
-  pointer-events: none;
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+  background: #a9e0fc url('assets/msq-pods-water-hero-bg.jpg') center bottom / cover no-repeat;
+  z-index: 1 !important;
+  pointer-events: none !important;
 }
 
+.msq-pods-hero-bg-video {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  object-fit: cover !important;
+  object-position: center bottom !important;
+  pointer-events: none !important;
+  z-index: 1 !important;
+}
+
+/* Semi-transparent ambient water shimmer overlay */
 .msq-pods-hero-water-overlay {
-  position: absolute;
-  inset: 0;
+  position: absolute !important;
+  inset: 0 !important;
   background: 
-    radial-gradient(ellipse 65% 65% at 22% 45%, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.2) 60%, transparent 100%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, transparent 35%, transparent 70%, rgba(0, 112, 186, 0.08) 100%);
-  z-index: 2;
-  pointer-events: none;
+    radial-gradient(ellipse 70% 70% at 22% 45%, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.15) 55%, transparent 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, transparent 35%, transparent 70%, rgba(0, 112, 186, 0.06) 100%) !important;
+  z-index: 2 !important;
+  pointer-events: none !important;
 }
 
 .msq-pods-hero-container {
@@ -956,6 +976,10 @@
     padding-bottom: 4rem !important;
   }
 
+  .msq-pods-hero-bg-video {
+    object-position: center center !important;
+  }
+
   .msq-pods-hero-container,
   .msq-quality-container {
     grid-template-columns: 1fr;
@@ -985,11 +1009,15 @@
 @media screen and (max-width: 768px) {
   .msq-pods-hero.light-blue-theme {
     height: auto !important;
-    min-height: auto !important;
+    min-height: 100vh !important;
     padding-top: 100px !important;
     padding-bottom: 3.5rem !important;
     padding-left: 1.25rem !important;
     padding-right: 1.25rem !important;
+  }
+
+  .msq-pods-hero-bg-video {
+    object-position: 70% center !important;
   }
 
   .msq-pods-hero-container {
@@ -1161,4 +1189,11 @@
   align-items: center;
   gap: 1rem;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .msq-pods-hero-bg-video {
+    display: none !important;
+  }
+}
+
 
