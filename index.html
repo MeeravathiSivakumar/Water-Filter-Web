@@ -17,11 +17,11 @@
     .showcase-section {
       position: relative;
       background: radial-gradient(circle at 50% 25%, #dff2fe 0%, #cae6fa 35%, #b2daf6 70%, #90c7f2 100%);
-      padding: 6.5rem 2.5rem 3.5rem;
-      min-height: 100vh;
+      padding: 5.2rem 2.5rem 2.8rem;
+      min-height: auto;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       overflow: hidden;
     }
 
@@ -210,14 +210,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 600px;
+      min-height: 540px;
     }
 
     .filter-stack-stage {
       position: relative;
       width: 100%;
       max-width: 530px;
-      height: 600px;
+      height: 540px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -262,9 +262,10 @@
     .cartridges-assembly {
       position: absolute;
       left: 50%;
-      transform: translateX(-50%);
-      width: 120px;
-      height: 510px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 110px;
+      height: 440px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -280,16 +281,20 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
+      transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
       will-change: transform;
       transform-style: preserve-3d;
     }
     .filter-cartridge img {
       max-width: 100%;
       height: auto;
+      max-height: 80px;
       display: block;
-      filter: drop-shadow(0 10px 18px rgba(12, 45, 80, 0.18));
+      filter: drop-shadow(0 8px 16px rgba(12, 45, 80, 0.16));
       transition: filter 0.3s;
+    }
+    #partTop img {
+      max-height: 56px;
     }
     .filter-cartridge:hover img {
       filter: drop-shadow(0 16px 26px rgba(0, 119, 238, 0.28));
@@ -360,8 +365,8 @@
 
     /* Callout 01 (Right - Sediment) */
     .callout-1 {
-      top: 12%;
-      right: 6px;
+      top: 118px;
+      right: 10px;
     }
     .callout-1 .callout-line {
       width: 44px;
@@ -374,8 +379,8 @@
 
     /* Callout 02 (Left - Carbon) */
     .callout-2 {
-      top: 32%;
-      left: 6px;
+      top: 221px;
+      left: 10px;
     }
     .callout-2 .callout-line {
       width: 44px;
@@ -388,8 +393,8 @@
 
     /* Callout 03 (Right - RO Membrane) */
     .callout-3 {
-      top: 52%;
-      right: 6px;
+      top: 324px;
+      right: 10px;
     }
     .callout-3 .callout-line {
       width: 44px;
@@ -402,8 +407,8 @@
 
     /* Callout 04 (Left - Post Carbon) */
     .callout-4 {
-      top: 72%;
-      left: 6px;
+      top: 427px;
+      left: 10px;
     }
     .callout-4 .callout-line {
       width: 44px;
@@ -567,36 +572,19 @@
     }
 
     /* Responsive Breakpoints */
-    /* Responsive Breakpoints: Tablet & Desktop Narrow (768px - 1120px) */
-    @media (max-width: 1120px) and (min-width: 768px) {
+    /* Responsive Breakpoints: Tablet & Desktop Narrow (860px - 1120px) maintains luxury 3-column balance */
+    @media (max-width: 1120px) and (min-width: 860px) {
       .showcase-grid {
-        grid-template-columns: 1fr;
-        gap: 3.5rem;
+        grid-template-columns: 1fr 1.35fr 0.85fr;
+        gap: 1.2rem;
       }
-      .showcase-left {
-        text-align: center;
-        padding-right: 0;
-      }
-      .showcase-desc {
-        margin: 0 auto 2.2rem;
-      }
-      .filter-stack-stage {
-        max-width: 530px;
-        margin: 0 auto;
-      }
-      .callout-1, .callout-3 { right: 8px !important; }
-      .callout-2, .callout-4 { left: 8px !important; }
-      .showcase-features-bar {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-      }
-      .feature-item:nth-child(2)::after {
-        display: none;
+      .showcase-title {
+        font-size: clamp(2rem, 3.2vw, 2.6rem);
       }
     }
 
-    /* Mobile Screens (< 768px): Complete Side-by-Side Filter & Callouts Alignment */
-    @media (max-width: 767px) {
+    /* Mobile Screens (< 860px): Complete Side-by-Side Filter & Callouts Alignment */
+    @media (max-width: 859px) {
       .showcase-section {
         padding: 2.8rem 1rem 2.2rem;
       }
@@ -646,15 +634,19 @@
       }
       .cartridges-assembly {
         position: absolute !important;
-        left: 12px !important;
-        top: 10px !important;
+        left: 14px !important;
+        top: 35px !important;
         transform: none !important;
-        width: 82px !important;
-        height: 480px !important;
+        width: 80px !important;
+        height: 450px !important;
         margin: 0 !important;
       }
       .filter-cartridge img {
         max-width: 85% !important;
+        max-height: 72px !important;
+      }
+      #partTop img {
+        max-height: 48px !important;
       }
       /* On mobile, neatly stack all 4 callouts on the right of the filter assembly */
       .callout-box {
@@ -666,10 +658,10 @@
         margin: 0 !important;
         z-index: 5 !important;
       }
-      .callout-1 { top: 6% !important; }
-      .callout-2 { top: 29% !important; }
-      .callout-3 { top: 52% !important; }
-      .callout-4 { top: 75% !important; }
+      .callout-1 { top: 109px !important; }
+      .callout-2 { top: 224px !important; }
+      .callout-3 { top: 324px !important; }
+      .callout-4 { top: 439px !important; }
       .callout-line {
         display: block !important;
         position: absolute !important;
@@ -2789,23 +2781,21 @@ document.addEventListener("DOMContentLoaded", function() {
     const part3 = document.getElementById('part3');
     const part4 = document.getElementById('part4');
 
-    // Natural vertical separation - balanced within viewport
-    const yTop = -38 * (1 - t) + 28 * t;
-    const y1 = -18 * (1 - t) + 14 * t;
+    // Natural subtle vertical separation - perfectly contained in stage
+    const yTop = -14 * (1 - t) + 10 * t;
+    const y1 = -7 * (1 - t) + 5 * t;
     const y2 = 0;
-    const y3 = 18 * (1 - t) - 14 * t;
-    const y4 = 36 * (1 - t) - 28 * t;
+    const y3 = 7 * (1 - t) - 5 * t;
+    const y4 = 14 * (1 - t) - 10 * t;
 
     // Natural 3D rotations & rolling dynamics
-    // In exploded state (t=0): organic angle offset showing 3D cylinder form
-    // In assembled state (t=1): aligned perfectly into single docked vertical cartridge stack
-    const rot1 = -4.2 * (1 - t);
-    const rot2 = 3.2 * (1 - t);
-    const rot3 = -2.8 * (1 - t);
-    const rot4 = 2.4 * (1 - t);
+    const rot1 = -3.2 * (1 - t);
+    const rot2 = 2.4 * (1 - t);
+    const rot3 = -2.0 * (1 - t);
+    const rot4 = 1.8 * (1 - t);
 
     // Cylindrical rotational roll during assembly motion
-    const rollY = Math.sin((1 - t) * Math.PI) * 10;
+    const rollY = Math.sin((1 - t) * Math.PI) * 8;
 
     if (partTop) partTop.style.transform = `translateY(${yTop}px) rotateZ(${rot1 * 0.4}deg) rotateY(${rollY * 0.5}deg)`;
     if (part1) part1.style.transform = `translateY(${y1}px) rotateZ(${rot1}deg) rotateY(${rollY}deg)`;
@@ -2839,18 +2829,20 @@ document.addEventListener("DOMContentLoaded", function() {
   // Initial call - exploded view
   applyAssemblyTransform(0);
 
-  // Interactive 3D perspective rolling on hover
+  // Interactive 3D perspective rolling on hover (preserves translate(-50%, -50%))
   const filterStage = document.querySelector('.filter-stack-stage');
   const cartridgeAssembly = document.getElementById('cartridgesAssembly');
   if (filterStage && cartridgeAssembly) {
     filterStage.addEventListener('mousemove', function(e) {
+      if (window.innerWidth <= 1024) return;
       const rect = filterStage.getBoundingClientRect();
       const normX = ((e.clientX - rect.left) / rect.width) - 0.5;
       const normY = ((e.clientY - rect.top) / rect.height) - 0.5;
-      cartridgeAssembly.style.transform = `perspective(800px) rotateY(${normX * 12}deg) rotateX(${-normY * 8}deg)`;
+      cartridgeAssembly.style.transform = `translate(-50%, -50%) perspective(800px) rotateY(${normX * 8}deg) rotateX(${-normY * 6}deg)`;
     });
     filterStage.addEventListener('mouseleave', function() {
-      cartridgeAssembly.style.transform = 'perspective(800px) rotateY(0deg) rotateX(0deg)';
+      if (window.innerWidth <= 1024) return;
+      cartridgeAssembly.style.transform = 'translate(-50%, -50%) perspective(800px) rotateY(0deg) rotateX(0deg)';
     });
   }
 
@@ -2960,31 +2952,37 @@ document.addEventListener("DOMContentLoaded", function() {
     let seams = [140, 240, 340, 440];
 
     function updateCoords() {
+      if (!stage || !partTop || !part1 || !part2 || !part3 || !part4) return;
       const sRect = stage.getBoundingClientRect();
+      if (!sRect.height) return;
       const topRect = partTop.getBoundingClientRect();
       const p1Rect = part1.getBoundingClientRect();
       const p2Rect = part2.getBoundingClientRect();
       const p3Rect = part3.getBoundingClientRect();
       const p4Rect = part4.getBoundingClientRect();
 
-      cx = (topRect.left + topRect.width * 0.5) - sRect.left;
-      const yCapIn = (topRect.top - sRect.top) + 12;
-      const yCapOut = (topRect.bottom - sRect.top) + 12;
+      const cRect = canvas.getBoundingClientRect();
+      const cOffsetX = cRect.left - sRect.left;
+      const cOffsetY = cRect.top - sRect.top;
 
-      const y1In = (p1Rect.top - sRect.top) + 12;
-      const y1Out = (p1Rect.bottom - sRect.top) + 12;
+      cx = (topRect.left + topRect.width * 0.5) - sRect.left - cOffsetX;
+      const yCapIn = (topRect.top - sRect.top) - cOffsetY + (topRect.height * 0.2);
+      const yCapOut = (topRect.bottom - sRect.top) - cOffsetY;
 
-      const y2In = (p2Rect.top - sRect.top) + 12;
-      const y2Out = (p2Rect.bottom - sRect.top) + 12;
+      const y1In = (p1Rect.top - sRect.top) - cOffsetY;
+      const y1Out = (p1Rect.bottom - sRect.top) - cOffsetY;
 
-      const y3In = (p3Rect.top - sRect.top) + 12;
-      const y3Out = (p3Rect.bottom - sRect.top) + 12;
+      const y2In = (p2Rect.top - sRect.top) - cOffsetY;
+      const y2Out = (p2Rect.bottom - sRect.top) - cOffsetY;
 
-      const y4In = (p4Rect.top - sRect.top) + 12;
-      const y4Out = (p4Rect.bottom - sRect.top) + 12;
+      const y3In = (p3Rect.top - sRect.top) - cOffsetY;
+      const y3Out = (p3Rect.bottom - sRect.top) - cOffsetY;
 
-      outCascadeY = y4Out + 46;
-      startY = yCapIn - 6;
+      const y4In = (p4Rect.top - sRect.top) - cOffsetY;
+      const y4Out = (p4Rect.bottom - sRect.top) - cOffsetY;
+
+      outCascadeY = y4Out + 32;
+      startY = yCapIn - 4;
       streamSpan = Math.max(10, outCascadeY - startY);
 
       seams = [
