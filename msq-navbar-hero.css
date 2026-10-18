@@ -245,13 +245,15 @@ img, video, canvas, svg {
   isolation: isolate !important;
   color: #ffffff !important;
   text-decoration: none !important;
-  font-size: 0.81rem !important;
+  font-size: 0.82rem !important;
   font-weight: 700 !important;
   padding: 0.32rem 0.72rem !important;
   border-radius: 999px !important;
-  border: 1px solid rgba(255, 255, 255, 0.28) !important;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(14, 68, 140, 0.35) 50%, rgba(6, 25, 55, 0.5) 100%) !important;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.5) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  box-shadow: 0 1px 3px rgba(0, 20, 50, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.45) !important;
   transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease !important;
   white-space: nowrap !important;
   letter-spacing: 0.01em !important;
@@ -289,19 +291,15 @@ img, video, canvas, svg {
 }
 
 .msq-link:not(.is-active):hover,
-.msq-link:not(.is-active):active,
 .msq-link:not(.is-active):focus-visible {
   color: #ffffff !important;
-  border-color: rgba(0, 229, 201, 0.8) !important;
-  background: linear-gradient(115deg, #0057c8 0%, #0093fe 30%, #00d4ff 70%, #06d6a0 100%) !important;
-  background-size: 200% 200% !important;
-  animation: msqLiquidSurfaceFlow 4s ease-in-out infinite !important;
-  box-shadow: 0 1px 6px rgba(0, 180, 216, 0.35), inset 0 1px 1.5px #ffffff !important;
+  border-color: rgba(0, 229, 201, 0.75) !important;
+  background: rgba(255, 255, 255, 0.22) !important;
+  box-shadow: 0 2px 8px rgba(0, 180, 216, 0.3), inset 0 1px 1.5px #ffffff !important;
   transform: none !important;
 }
 
-.msq-link:not(.is-active):hover::after,
-.msq-link:not(.is-active):active::after {
+.msq-link:not(.is-active):hover::after {
   opacity: 1 !important;
   animation: msqLiquidSheenSweep 3s cubic-bezier(0.4, 0, 0.2, 1) infinite !important;
 }
@@ -309,6 +307,7 @@ img, video, canvas, svg {
 /* Active Navigation Item (Permanent Radiant Liquid Metal Chrome Pill) */
 .msq-link.is-active {
   color: #ffffff !important;
+  font-size: 0.82rem !important;
   font-weight: 700 !important;
   padding: 0.32rem 0.72rem !important;
   border: 1px solid rgba(255, 255, 255, 0.65) !important;
@@ -640,8 +639,10 @@ img, video, canvas, svg {
   padding: 0.65rem 1.1rem !important;
   border-radius: 999px !important;
   border: 1px solid rgba(255, 255, 255, 0.25) !important;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(14, 68, 140, 0.35) 100%) !important;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.45) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.4) !important;
   transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease !important;
   transform: none !important;
   box-sizing: border-box !important;
@@ -1912,9 +1913,10 @@ button.btn-secondary:hover,
     gap: 0.15rem !important;
     padding-right: 0.8rem !important;
   }
-  .msq-link {
-    padding: 0.4rem 0.65rem !important;
-    font-size: 0.84rem !important;
+  .msq-link,
+  .msq-link.is-active {
+    padding: 0.32rem 0.65rem !important;
+    font-size: 0.81rem !important;
   }
   .msq-nav-phone {
     padding: 0.42rem 0.75rem !important;

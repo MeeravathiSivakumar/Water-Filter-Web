@@ -278,7 +278,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ── 7. LIQUID METAL BUTTON INTERACTIVE RIPPLE EFFECT (Instant Touch + Click) ──
   function createLiquidRipple(e) {
-    const btn = e.target.closest('a, button, input[type="submit"], .btn-primary, .btn-secondary, .msq-link, .msq-nav-cta, .msq-drawer-cta, .msq-btn-hero-primary, .msq-btn-hero-secondary, .msq-hub-pill, .submit-button, .msq-cat-btn, .card-action-btn, .assembly-btn, .msq-prod-book-btn, .msq-matrix-cta');
+    const btn = e.target.closest('.msq-nav-cta, .msq-drawer-cta, .btn-primary, .btn-secondary, .msq-btn-hero-primary, .msq-btn-hero-secondary, .submit-button, .card-action-btn, .assembly-btn, .msq-prod-book-btn, .msq-matrix-cta, .msq-liquid-btn-primary, .msq-liquid-btn-secondary');
     if (!btn) return;
     const clientX = e.clientX !== undefined ? e.clientX : (e.touches && e.touches[0] ? e.touches[0].clientX : undefined);
     const clientY = e.clientY !== undefined ? e.clientY : (e.touches && e.touches[0] ? e.touches[0].clientY : undefined);

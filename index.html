@@ -17,7 +17,7 @@
     .showcase-section {
       position: relative;
       background: radial-gradient(circle at 50% 25%, #dff2fe 0%, #cae6fa 35%, #b2daf6 70%, #90c7f2 100%);
-      padding: 5.2rem 2.5rem 2.8rem;
+      padding: 2.2rem 2.2rem 1.6rem;
       min-height: auto;
       display: flex;
       flex-direction: column;
@@ -60,9 +60,9 @@
     .showcase-grid {
       display: grid;
       grid-template-columns: 1fr 1.65fr 0.95fr;
-      gap: 2.2rem;
+      gap: 1.5rem;
       align-items: center;
-      min-height: 620px;
+      min-height: auto;
       position: relative;
     }
 
@@ -74,71 +74,71 @@
     .showcase-tag {
       display: inline-flex;
       align-items: center;
-      gap: 0.6rem;
-      font-size: 0.8rem;
+      gap: 0.5rem;
+      font-size: 0.74rem;
       font-weight: 700;
-      letter-spacing: 0.28em;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
       color: #0077ee;
-      margin-bottom: 1.3rem;
+      margin-bottom: 0.65rem;
     }
     .showcase-tag::after {
       content: "";
       display: inline-block;
-      width: 42px;
+      width: 36px;
       height: 2px;
       background: #0077ee;
       border-radius: 2px;
     }
     .showcase-title {
-      font-size: clamp(2.5rem, 4vw, 3.8rem);
+      font-size: clamp(2rem, 3.2vw, 2.85rem);
       font-weight: 800;
       line-height: 1.08;
       color: #0c1e38;
-      margin-bottom: 1.4rem;
+      margin-bottom: 0.75rem;
       letter-spacing: -0.025em;
     }
     .showcase-desc {
-      font-size: 1.05rem;
-      line-height: 1.65;
+      font-size: 0.94rem;
+      line-height: 1.5;
       color: #4a637d;
-      max-width: 420px;
-      margin-bottom: 2.2rem;
+      max-width: 400px;
+      margin-bottom: 1.15rem;
     }
 
     /* Explore Button */
     .showcase-cta {
       display: inline-flex;
       align-items: center;
-      gap: 1.2rem;
-      background: rgba(255, 255, 255, 0.92);
+      gap: 1rem;
+      background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(16px);
       border: 1px solid rgba(0, 119, 238, 0.28);
       border-radius: 999px;
-      padding: 0.72rem 0.9rem 0.72rem 1.8rem;
+      padding: 0.58rem 0.8rem 0.58rem 1.6rem;
       color: #0c1e38;
       font-weight: 700;
-      font-size: 0.98rem;
+      font-size: 0.92rem;
       text-decoration: none;
-      box-shadow: 0 10px 28px rgba(0, 119, 238, 0.1);
+      box-shadow: 0 8px 24px rgba(0, 119, 238, 0.1);
       transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
     }
     .showcase-cta:hover {
       transform: translateY(-2px);
-      box-shadow: 0 16px 36px rgba(0, 119, 238, 0.2);
+      box-shadow: 0 14px 32px rgba(0, 119, 238, 0.2);
       background: #ffffff;
       border-color: #0077ee;
     }
     .showcase-cta-arrow {
-      width: 36px;
-      height: 36px;
+      width: 32px;
+      height: 32px;
       background: #e8f3fd;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       color: #0077ee;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       font-weight: 800;
       transition: all 0.3s;
     }
@@ -155,16 +155,16 @@
       backdrop-filter: blur(10px);
       border: 1px solid rgba(0, 119, 238, 0.24);
       border-radius: 999px;
-      padding: 4px;
-      margin-top: 1.8rem;
+      padding: 3px 5px;
+      margin-top: 1rem;
       box-shadow: 0 4px 16px rgba(12, 74, 138, 0.06);
     }
     .assembly-btn {
       border: none;
       background: transparent;
-      padding: 0.5rem 1.25rem;
+      padding: 0.42rem 1.05rem;
       border-radius: 999px;
-      font-size: 0.84rem;
+      font-size: 0.8rem;
       font-weight: 700;
       color: #4a637d;
       cursor: pointer;
@@ -180,8 +180,8 @@
     .water-flow-indicator {
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
-      font-size: 0.72rem;
+      gap: 0.45rem;
+      font-size: 0.68rem;
       font-weight: 700;
       letter-spacing: 0.08em;
       text-transform: uppercase;
@@ -210,14 +210,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 540px;
+      min-height: 430px;
     }
 
     .filter-stack-stage {
       position: relative;
       width: 100%;
-      max-width: 530px;
-      height: 540px;
+      max-width: 510px;
+      height: 430px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -231,8 +231,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 480px;
-      height: 720px;
+      width: 440px;
+      height: 520px;
       pointer-events: none;
       z-index: 4; /* Floats smoothly around and over the cartridges */
     }
@@ -243,8 +243,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 340px;
-      height: 620px;
+      width: 300px;
+      height: 480px;
       pointer-events: none;
       z-index: 1;
       opacity: 0.75;
@@ -264,8 +264,8 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      width: 110px;
-      height: 440px;
+      width: 100px;
+      height: 350px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -288,22 +288,22 @@
     .filter-cartridge img {
       max-width: 100%;
       height: auto;
-      max-height: 80px;
+      max-height: 66px;
       display: block;
-      filter: drop-shadow(0 8px 16px rgba(12, 45, 80, 0.16));
+      filter: drop-shadow(0 6px 14px rgba(12, 45, 80, 0.16));
       transition: filter 0.3s;
     }
     #partTop img {
-      max-height: 56px;
+      max-height: 44px;
     }
     .filter-cartridge:hover img {
-      filter: drop-shadow(0 16px 26px rgba(0, 119, 238, 0.28));
+      filter: drop-shadow(0 14px 24px rgba(0, 119, 238, 0.28));
     }
 
     /* Sleek Callout Typography and Connecting Lines */
     .callout-box {
       position: absolute;
-      width: 185px;
+      width: 180px;
       z-index: 5;
       transition: all 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
       pointer-events: auto;
@@ -313,8 +313,8 @@
       backdrop-filter: blur(12px);
       border: 1px solid rgba(0, 119, 238, 0.22);
       border-radius: 12px;
-      padding: 0.65rem 0.85rem;
-      box-shadow: 0 10px 24px rgba(12, 74, 138, 0.08);
+      padding: 0.55rem 0.75rem;
+      box-shadow: 0 8px 20px rgba(12, 74, 138, 0.08);
       transition: all 0.3s ease;
     }
     .callout-box:hover .callout-content {
@@ -365,7 +365,7 @@
 
     /* Callout 01 (Right - Sediment) */
     .callout-1 {
-      top: 118px;
+      top: 80px;
       right: 10px;
     }
     .callout-1 .callout-line {
@@ -379,7 +379,7 @@
 
     /* Callout 02 (Left - Carbon) */
     .callout-2 {
-      top: 221px;
+      top: 165px;
       left: 10px;
     }
     .callout-2 .callout-line {
@@ -393,7 +393,7 @@
 
     /* Callout 03 (Right - RO Membrane) */
     .callout-3 {
-      top: 324px;
+      top: 250px;
       right: 10px;
     }
     .callout-3 .callout-line {
@@ -407,7 +407,7 @@
 
     /* Callout 04 (Left - Post Carbon) */
     .callout-4 {
-      top: 427px;
+      top: 335px;
       left: 10px;
     }
     .callout-4 .callout-line {
