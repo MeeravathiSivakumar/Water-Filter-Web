@@ -92,10 +92,23 @@
 }
 
 .msq-hubs-hero-actions {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: flex !important;
+  gap: 1.15rem !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  margin: 0 auto !important;
+  z-index: 5 !important;
+}
+
+.msq-hubs-hero-cta {
+  padding: 0.88rem 2.2rem !important;
+  font-size: 0.96rem !important;
+}
+
+.msq-hubs-hero-phone {
+  padding: 0.85rem 1.85rem !important;
+  font-size: 0.92rem !important;
 }
 
 /* ── 2. TWO STRATEGIC HUBS GRID (EXACT 2-COLUMN ALIGNMENT) ── */
@@ -254,6 +267,18 @@
 @media screen and (max-width: 640px) {
   .msq-hubs-hero {
     padding: 7rem 1.25rem 4rem !important;
+  }
+  .msq-hubs-hero-actions {
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    gap: 0.85rem !important;
+  }
+  .msq-hubs-hero-actions a {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 0.78rem 1.4rem !important;
+    font-size: 0.88rem !important;
   }
   .msq-stats-grid {
     grid-template-columns: 1fr !important;
